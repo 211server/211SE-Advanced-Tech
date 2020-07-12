@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CubeBlocks>
+        <Definition
+                xsi:type="MyObjectBuilder_CargoContainerDefinition">    <!-- components*10 buildTime*2 inventorySizeEdgeLength=16-->
+            <Id>
+                <TypeId>CargoContainer</TypeId>
+                <SubtypeId>LargeBlockLargeContainer2</SubtypeId>
+            </Id>
+            <DisplayName>大型货物储存箱II</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\container_large.dds</Icon>
+            <Description>压缩存储式货柜</Description>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Large\CargoContainerLarge.mwm</Model>
+            <Components>
+                <Component Subtype="InteriorPlate" Count="3000"/>
+                <Component Subtype="Construction" Count="600"/>
+                <Component Subtype="MetalGrid" Count="240"/>
+                <Component Subtype="SmallTube" Count="600"/>
+                <Component Subtype="Motor" Count="200"/>
+                <Component Subtype="Display" Count="10"/>
+                <Component Subtype="Computer" Count="80"/>
+                <Component Subtype="Construction" Count="200"/>
+                <Component Subtype="InteriorPlate" Count="600"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Right" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Left" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Top" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Bottom" StartX="1" StartY="1" EndX="2" EndY="2" Default="true"/>
+                <MountPoint Side="Front" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Back" StartX="1" StartY="1" EndX="2" EndY="2"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\CargoContainerLargeConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\CargoContainerLargeConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\CargoContainerLargeConstruction_3.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>LargeCargoContainer2</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>90</BuildTimeSeconds>
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <!-- origin 7.5 -->
+            <InventorySize>
+                <X>16</X>
+                <Y>16</Y>
+                <Z>16</Z>
+            </InventorySize>
+            <PCU>10</PCU>
+        </Definition>
+    </CubeBlocks>
+</Definitions>

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ResearchGroups>
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="Refinery2Group"/>
+            <Members>
+                <BlockId Type="MyObjectBuilder_Refinery" Subtype="LargeRefinery2"/>
+            </Members>
+        </ResearchGroup>
+
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="Assembler2Group"/>
+            <Members>
+                <BlockId Type="MyObjectBuilder_Assembler" Subtype="LargeAssembler2"/>
+            </Members>
+        </ResearchGroup>
+
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="OxygenGenerator2Group"/>
+            <Members>
+                <BlockId Type="MyObjectBuilder_OxygenGenerator" Subtype="LargeOxygenGenerator2"/>
+                <BlockId Type="MyObjectBuilder_OxygenFarm" Subtype="LargeBlockOxygenFarm2"/>
+            </Members>
+        </ResearchGroup>
+
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="BatteryBlock2Group"/>
+            <Members>
+                <BlockId Type="MyObjectBuilder_BatteryBlock" Subtype="LargeBlockBatteryBlock2"/>
+            </Members>
+        </ResearchGroup>
+
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="Reactor2Group"/>
+            <Members>
+                <BlockId Type="MyObjectBuilder_Reactor" Subtype="LargeBlockLargeGenerator2"/>
+            </Members>
+        </ResearchGroup>
+
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="SolarPanel2Group"/>
+            <Members>
+                <BlockId Type="MyObjectBuilder_SolarPanel" Subtype="LargeBlockSolarPanel2"/>
+                <BlockId Type="MyObjectBuilder_WindTurbine" Subtype="LargeBlockWindTurbine2"/>
+            </Members>
+        </ResearchGroup>
+
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="OreDetector2Group"/>
+            <Members>
+                <BlockId Type="MyObjectBuilder_OreDetector" Subtype="LargeOreDetector2"/>
+                <BlockId Type="MyObjectBuilder_OreDetector" Subtype="SmallBlockOreDetector2"/>
+                <BlockId Type="MyObjectBuilder_Drill" Subtype="LargeBlockDrill2"/>
+            </Members>
+        </ResearchGroup>
+
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="ThrustGroup"/>
+            <Members>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallThrust"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeThrust"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallThrust"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeThrust"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallThrustSciFi"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeThrustSciFi"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallThrustSciFi"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeThrustSciFi"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeAtmosphericThrust"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallAtmosphericThrust"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeAtmosphericThrust"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallAtmosphericThrust"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeAtmosphericThrustSciFi"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallAtmosphericThrustSciFi"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeAtmosphericThrustSciFi"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallAtmosphericThrustSciFi"/>
+            </Members>
+        </ResearchGroup>
+
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="Thrust2Group"/>
+            <Members>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallThrust2"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeThrust2"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallThrust2"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeThrust2"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeAtmosphericThrust2"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallAtmosphericThrust2"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeAtmosphericThrust2"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallAtmosphericThrust2"/>
+            </Members>
+        </ResearchGroup>
+
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="HydrogenThrustGroup"/>
+            <Members>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeHydrogenThrust"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallHydrogenThrust"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeHydrogenThrust"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallHydrogenThrust"/>
+            </Members>
+        </ResearchGroup>
+
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="HydrogenThrust2Group"/>
+            <Members>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeHydrogenThrust2"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallHydrogenThrust2"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeHydrogenThrust2"/>
+                <BlockId Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallHydrogenThrust2"/>
+            </Members>
+        </ResearchGroup>
+
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="CargoContainer2Group"/>
+            <Members>
+                <BlockId Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockLargeContainer2"/>
+            </Members>
+        </ResearchGroup>
+    </ResearchGroups>
+</Definitions>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0"  encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CategoryClasses>
+        <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+            <Id>
+                <TypeId>GuiBlockCategoryDefinition</TypeId>
+                <SubtypeId/>
+            </Id>
+            <DisplayName>T2</DisplayName>
+            <Name>T2</Name>
+            <SearchBlocks>true</SearchBlocks>
+            <IsShipCategory>true</IsShipCategory>
+            <IsBlockCategory>true</IsBlockCategory>
+            <ItemIds>
+                <string>Refinery/LargeRefinery2</string>
+                <string>Assembler/LargeAssembler2</string>
+                <string>OxygenGenerator/LargeOxygenGenerator2</string>
+                <string>OxygenFarm/LargeBlockOxygenFarm2</string>
+                <string>BatteryBlock/LargeBlockBatteryBlock2</string>
+                <string>Reactor/LargeBlockLargeGenerator2</string>
+                <string>WindTurbine/LargeBlockWindTurbine2</string>
+                <string>SolarPanel/LargeBlockSolarPanel2</string>
+                <string>Drill/LargeBlockDrill2</string>
+                <string>OreDetector/LargeOreDetector2</string>
+                <string>OreDetector/SmallBlockOreDetector2</string>
+                <string>Thrust/SmallBlockSmallThrust2</string>
+                <string>Thrust/SmallBlockLargeThrust2</string>
+                <string>Thrust/LargeBlockSmallThrust2</string>
+                <string>Thrust/LargeBlockLargeThrust2</string>
+                <string>Thrust/LargeBlockLargeHydrogenThrust2</string>
+                <string>Thrust/LargeBlockSmallHydrogenThrust2</string>
+                <string>Thrust/SmallBlockLargeHydrogenThrust2</string>
+                <string>Thrust/SmallBlockSmallHydrogenThrust2</string>
+                <string>Thrust/LargeBlockLargeAtmosphericThrust2</string>
+                <string>Thrust/LargeBlockSmallAtmosphericThrust2</string>
+                <string>Thrust/SmallBlockLargeAtmosphericThrust2</string>
+                <string>Thrust/SmallBlockSmallAtmosphericThrust2</string>
+                <string>CargoContainer/LargeBlockLargeContainer2</string>
+            </ItemIds>
+        </Category>
+    </CategoryClasses>
+</Definitions>

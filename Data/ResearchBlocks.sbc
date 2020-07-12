@@ -1,0 +1,158 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ResearchBlocks>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Assembler" Subtype="LargeAssembler2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>4</GroupSubtype> <!-- LargeAssembler -->
+            </UnlockedByGroups>
+        </ResearchBlock>
+
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_OxygenGenerator" Subtype="LargeOxygenGenerator2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>15</GroupSubtype> <!-- LargeOxygenGenerator -->
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_OxygenFarm" Subtype="LargeBlockOxygenFarm2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>15</GroupSubtype> <!-- LargeOxygenGenerator -->
+            </UnlockedByGroups>
+        </ResearchBlock>
+
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_BatteryBlock" Subtype="LargeBlockBatteryBlock2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>22</GroupSubtype> <!-- LargeBlockBatteryBlock -->
+            </UnlockedByGroups>
+        </ResearchBlock>
+
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Reactor" Subtype="LargeBlockLargeGenerator2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>Refinery2Group</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_OreDetector" Subtype="LargeOreDetector2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>23</GroupSubtype> <!-- LargeRefinery -->
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_OreDetector" Subtype="SmallBlockOreDetector2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>23</GroupSubtype> <!-- LargeRefinery -->
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Drill" Subtype="LargeBlockDrill2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>23</GroupSubtype> <!-- LargeRefinery -->
+            </UnlockedByGroups>
+        </ResearchBlock>
+
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Refinery" Subtype="LargeRefinery2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>23</GroupSubtype> <!-- LargeRefinery -->
+            </UnlockedByGroups>
+        </ResearchBlock>
+
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_SolarPanel" Subtype="LargeBlockSolarPanel2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>27</GroupSubtype> <!-- LargeBlockSolarPanel -->
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_WindTurbine" Subtype="LargeBlockWindTurbine2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>27</GroupSubtype> <!-- LargeBlockSolarPanel -->
+            </UnlockedByGroups>
+        </ResearchBlock>
+
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeHydrogenThrust2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>HydrogenThrustGroup</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallHydrogenThrust2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>HydrogenThrustGroup</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeHydrogenThrust2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>HydrogenThrustGroup</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallHydrogenThrust2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>HydrogenThrustGroup</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallThrust2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>ThrustGroup</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeThrust2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>ThrustGroup</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallThrust2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>ThrustGroup</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeThrust2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>ThrustGroup</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeAtmosphericThrust2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>ThrustGroup</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallAtmosphericThrust2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>ThrustGroup</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeAtmosphericThrust2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>ThrustGroup</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallAtmosphericThrust2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>ThrustGroup</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockLargeContainer2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>24</GroupSubtype> <!-- LargeBlockLargeContainer -->
+            </UnlockedByGroups>
+        </ResearchBlock>
+    </ResearchBlocks>
+</Definitions>
