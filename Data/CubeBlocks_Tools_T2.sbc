@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <CubeBlocks>
-        <Definition xsi:type="MyObjectBuilder_ShipDrillDefinition"> <!-- components*10 radius=4 buildTime*2 -->
+        <Definition xsi:type="MyObjectBuilder_ShipDrillDefinition"> <!-- components*10 radius=4.8 buildTime*2 -->
             <Id>
                 <TypeId>Drill</TypeId>
                 <SubtypeId>LargeBlockDrill2</SubtypeId>
@@ -61,10 +61,10 @@
 
             <ResourceSinkGroup>Defense</ResourceSinkGroup>
             <!-- origin 1.9 -->
-            <SensorRadius>4</SensorRadius>
+            <SensorRadius>4.8</SensorRadius>
             <SensorOffset>2.8</SensorOffset>
             <!-- origin 1.9 -->
-            <CutOutRadius>4</CutOutRadius>
+            <CutOutRadius>4.8</CutOutRadius>
             <CutOutOffset>2.8</CutOutOffset>
             <ParticleOffset>
                 <X>0</X>
