@@ -1,4 +1,4 @@
 ﻿# 211SE Advanced Tech
-Multi tiers tech for vanilla game.
+Multi tiers tech.
 
 (WIP)

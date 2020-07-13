@@ -36,6 +36,9 @@
                 <string>Thrust/SmallBlockLargeAtmosphericThrust2</string>
                 <string>Thrust/SmallBlockSmallAtmosphericThrust2</string>
                 <string>CargoContainer/LargeBlockLargeContainer2</string>
+                <!-- NanoBot -->
+                <string>ShipWelder/SELtdLargeNanobotBuildAndRepairSystem</string>
+                <string>ShipWelder/SELtdSmallNanobotBuildAndRepairSystem</string>
             </ItemIds>
         </Category>
     </CategoryClasses>
