@@ -39,6 +39,87 @@
                 <!-- NanoBot -->
                 <string>ShipWelder/SELtdLargeNanobotBuildAndRepairSystem</string>
                 <string>ShipWelder/SELtdSmallNanobotBuildAndRepairSystem</string>
+                <!-- Cannons -->
+                <string>LargeGatlingTurret/MiniVulcan</string>
+                <string>LargeGatlingTurret/SmallSentryGun</string>
+                <string>LargeGatlingTurret/SmallSentryGatling</string>
+                <string>LargeMissileTurret/SentryMissileTurret</string>
+            </ItemIds>
+        </Category>
+
+        <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+            <Id>
+                <TypeId>GuiBlockCategoryDefinition</TypeId>
+                <SubtypeId/>
+            </Id>
+            <DisplayName>T3</DisplayName>
+            <Name>T3</Name>
+            <SearchBlocks>true</SearchBlocks>
+            <IsShipCategory>true</IsShipCategory>
+            <IsBlockCategory>true</IsBlockCategory>
+            <ItemIds>
+                <!-- Cannons -->
+                <string>LargeGatlingTurret/LargeVulcan</string>
+                <string>LargeMissileTurret/40mmBofors</string>
+                <string>LargeGatlingTurret/LargeAden</string>
+                <string>LargeGatlingTurret/SmallVulcan</string>
+                <string>LargeMissileTurret/40mmBofors_small</string>
+                <string>LargeGatlingTurret/SmallAden</string>
+                <!-- Shields -->
+                <string>Refinery/LargeShipSmallShieldGeneratorBase</string>
+                <string>Refinery/SmallShipMicroShieldGeneratorBase</string>
+                <string>UpgradeModule/ShieldFluxCoil</string>
+            </ItemIds>
+        </Category>
+
+        <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+            <Id>
+                <TypeId>GuiBlockCategoryDefinition</TypeId>
+                <SubtypeId/>
+            </Id>
+            <DisplayName>T4</DisplayName>
+            <Name>T4</Name>
+            <SearchBlocks>true</SearchBlocks>
+            <IsShipCategory>true</IsShipCategory>
+            <IsBlockCategory>true</IsBlockCategory>
+            <ItemIds>
+                <!-- Cannons -->
+                <string>LargeMissileTurret/300mmAutoCannon_1</string>
+                <string>LargeMissileTurret/300mmAutoCannon_2</string>
+                <string>LargeMissileTurret/300mmAutoCannon_3</string>
+                <string>LargeMissileTurret/900mmAutoCannon_1</string>
+                <string>LargeMissileTurret/900mmAutoCannon_2</string>
+                <string>LargeMissileTurret/900mmAutoCannon_3</string>
+                <string>LargeMissileTurret/Side300Cannon</string>
+                <string>LargeMissileTurret/Side900Cannon</string>
+                <string>LargeMissileTurret/300mmAutoCannon_1_small</string>
+                <string>LargeMissileTurret/300mmAutoCannon_2_small</string>
+                <string>LargeMissileTurret/300mmAutoCannon_3_small</string>
+                <string>LargeMissileTurret/900mmAutoCannon_1_small</string>
+                <string>LargeMissileTurret/900mmAutoCannon_2_small</string>
+                <string>LargeMissileTurret/900mmAutoCannon_3_small</string>
+                <string>LargeMissileTurret/Side300Cannonsmall</string>
+                <!-- Shields -->
+                <string>Refinery/LargeShipLargeShieldGeneratorBase</string>
+                <string>Refinery/SmallShipSmallShieldGeneratorBase</string>
+                <string>UpgradeModule/ShieldCapacitor</string>
+            </ItemIds>
+        </Category>
+
+        <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+            <Id>
+                <TypeId>GuiBlockCategoryDefinition</TypeId>
+                <SubtypeId/>
+            </Id>
+            <DisplayName>T5</DisplayName>
+            <Name>T5</Name>
+            <SearchBlocks>true</SearchBlocks>
+            <IsShipCategory>true</IsShipCategory>
+            <IsBlockCategory>true</IsBlockCategory>
+            <ItemIds>
+                <!-- Cannons -->
+                <string>SmallMissileLauncher/LittleDavid</string>
+                <string>SmallMissileLauncher/BigBertha</string>
             </ItemIds>
         </Category>
     </CategoryClasses>
