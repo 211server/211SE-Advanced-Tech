@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BlockVariantGroups>
+        <!--        <BlockVariantGroup>-->
+        <!--            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="EnergyFueledGroup" />-->
+        <!--            <Icon>Textures\GUI\Icons\Cubes\nuclear_reactor.dds</Icon>-->
+        <!--            <DisplayName>DisplayName_BlockGroup_EnergyFueledGroup</DisplayName>-->
+        <!--            <Description>Description_BlockGroup_EnergyFueledGroup</Description>-->
+        <!--            <Blocks>-->
+        <!--                <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockSmallGenerator" />-->
+        <!--                <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockLargeGenerator" />-->
+        <!--                <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockLargeGenerator2" />-->
+        <!--                <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockLargeGenerator3" />-->
+        <!--                <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockSmallGenerator" />-->
+        <!--                <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockLargeGenerator" />-->
+        <!--                <Block Type="MyObjectBuilder_HydrogenEngine" Subtype="LargeHydrogenEngine" />-->
+        <!--                <Block Type="MyObjectBuilder_HydrogenEngine" Subtype="SmallHydrogenEngine" />-->
+        <!--            </Blocks>-->
+        <!--        </BlockVariantGroup>-->
+    </BlockVariantGroups>
+</Definitions>

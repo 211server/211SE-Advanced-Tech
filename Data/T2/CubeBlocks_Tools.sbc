@@ -130,7 +130,7 @@
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <PCU>40</PCU>
         </Definition>
-        
+
         <Definition xsi:type="MyObjectBuilder_OreDetectorDefinition">   <!-- components*10 range*2 buildTime*2 -->
             <Id>
                 <TypeId>OreDetector</TypeId>
@@ -141,29 +141,29 @@
             <Description>微磁场地下金属探测器</Description>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="1" y="1" z="2" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="1" y="1" z="2"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\OreDetector.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="10" />
-                <Component Subtype="Construction" Count="20" />
-                <Component Subtype="Motor" Count="10" />
-                <Component Subtype="Computer" Count="10" />
-                <Component Subtype="Detector" Count="10" />
-                <Component Subtype="SteelPlate" Count="20" />
+                <Component Subtype="SteelPlate" Count="10"/>
+                <Component Subtype="Construction" Count="20"/>
+                <Component Subtype="Motor" Count="10"/>
+                <Component Subtype="Computer" Count="10"/>
+                <Component Subtype="Detector" Count="10"/>
+                <Component Subtype="SteelPlate" Count="20"/>
             </Components>
-            <CriticalComponent Subtype="Detector" Index="0" />
-            <Center x="0" y="0" z="1" />
+            <CriticalComponent Subtype="Detector" Index="0"/>
+            <Center x="0" y="0" z="1"/>
             <MountPoints>
-                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
-                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
-                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
-                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2" />
-                <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true"/>
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1"/>
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2"/>
+                <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\OreDetectorConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\OreDetectorConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\OreDetectorConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\OreDetectorConstruction_2.mwm"/>
             </BuildProgressModels>
             <BlockPairName>OreDetector2</BlockPairName>
             <MirroringY>Z</MirroringY>

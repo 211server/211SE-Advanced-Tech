@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!--    <CubeBlocks>-->
+    <!--        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">   &lt;!&ndash; TODO &ndash;&gt;-->
+    <!--            <Id>-->
+    <!--                <TypeId>Reactor</TypeId>-->
+    <!--                <SubtypeId>LargeBlockLargeGenerator3</SubtypeId>-->
+    <!--            </Id>-->
+    <!--            <DisplayName>大型反应堆III</DisplayName>-->
+    <!--            <Icon>Textures\GUI\Icons\Cubes\nuclear_reactor_large.dds</Icon>-->
+    <!--            <Description>轻元素聚变反应堆</Description>-->
+    <!--            <CubeSize>Large</CubeSize>-->
+    <!--            <GuiVisible>false</GuiVisible>-->
+    <!--            <BlockTopology>TriangleMesh</BlockTopology>-->
+    <!--            <Size x="3" y="3" z="3"/>-->
+    <!--            <ModelOffset x="0" y="0" z="0"/>-->
+    <!--            <Model>Models\Cubes\Large\GeneratorLarge.mwm</Model>-->
+    <!--            <Components>-->
+    <!--                <Component Subtype="SteelPlate" Count="8000"/>-->
+    <!--                <Component Subtype="Construction" Count="700"/>-->
+    <!--                <Component Subtype="MetalGrid" Count="400"/>-->
+    <!--                <Component Subtype="LargeTube" Count="400"/>-->
+    <!--                <Component Subtype="Superconductor" Count="1000"/>-->
+    <!--                <Component Subtype="Reactor" Count="20000"/>-->
+    <!--                <Component Subtype="Motor" Count="200"/>-->
+    <!--                <Component Subtype="Computer" Count="750"/>-->
+    <!--                <Component Subtype="SteelPlate" Count="2000"/>-->
+    <!--            </Components>-->
+    <!--            <CriticalComponent Subtype="Computer" Index="0"/>-->
+    <!--            <MountPoints>-->
+    <!--                <MountPoint Side="Right" StartX="1" StartY="1" EndX="2" EndY="2"/>-->
+    <!--                <MountPoint Side="Left" StartX="1" StartY="1" EndX="2" EndY="2"/>-->
+    <!--                <MountPoint Side="Top" StartX="1" StartY="1" EndX="2" EndY="2"/>-->
+    <!--                <MountPoint Side="Bottom" StartX="1" StartY="1" EndX="2" EndY="2" Default="true"/>-->
+    <!--                <MountPoint Side="Front" StartX="1" StartY="1" EndX="2" EndY="2"/>-->
+    <!--                <MountPoint Side="Back" StartX="1" StartY="1" EndX="2" EndY="2"/>-->
+    <!--            </MountPoints>-->
+    <!--            <BuildProgressModels>-->
+    <!--                <Model BuildPercentUpperBound="0.16" File="Models\Cubes\Large\GeneratorLargeConstruction_1.mwm"/>-->
+    <!--                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\GeneratorLargeConstruction_2.mwm"/>-->
+    <!--                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Large\GeneratorLargeConstruction_3.mwm"/>-->
+    <!--                <Model BuildPercentUpperBound="0.83" File="Models\Cubes\Large\GeneratorLargeConstruction_4.mwm"/>-->
+    <!--                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\GeneratorLargeConstruction_5.mwm"/>-->
+    <!--            </BuildProgressModels>-->
+    <!--            <BlockPairName>LargeReactor3</BlockPairName>-->
+    <!--            <MirroringY>Z</MirroringY>-->
+    <!--            <MirroringZ>Y</MirroringZ>-->
+    <!--            <EdgeType>Light</EdgeType>-->
+    <!--            <BuildTimeSeconds>200</BuildTimeSeconds>-->
+    <!--            <ResourceSourceGroup>Reactors</ResourceSourceGroup>-->
+    <!--            <MaxPowerOutput>1500</MaxPowerOutput>-->
+    <!--            <InventorySize>-->
+    <!--                <X>2</X>-->
+    <!--                <Y>2</Y>-->
+    <!--                <Z>2</Z>-->
+    <!--            </InventorySize>-->
+    <!--            <FuelInfos>-->
+    <!--                <FuelInfo>-->
+    <!--                    <Id>-->
+    <!--                        <TypeId>Ingot</TypeId>-->
+    <!--                        <SubtypeId>Helium</SubtypeId>-->
+    <!--                    </Id>-->
+    <!--                    <Ratio>0.1</Ratio>-->
+    <!--                </FuelInfo>-->
+    <!--            </FuelInfos>-->
+    <!--            <PrimarySound>ShipLrgNuclearLrg</PrimarySound>-->
+    <!--            <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>-->
+    <!--            <DamagedSound>ParticleReactor</DamagedSound>-->
+    <!--            <EmissiveColorPreset>Default</EmissiveColorPreset>-->
+    <!--            <DestroyEffect>Explosion_Warhead_30</DestroyEffect>-->
+    <!--            <DestroySound>WepLrgWarheadExpl</DestroySound>-->
+    <!--            <PCU>25</PCU>-->
+    <!--            <IsAirTight>false</IsAirTight>-->
+    <!--        </Definition>-->
+    <!--    </CubeBlocks>-->
+</Definitions>

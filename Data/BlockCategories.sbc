@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"  encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <CategoryClasses>
         <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
@@ -58,6 +58,7 @@
             <IsShipCategory>true</IsShipCategory>
             <IsBlockCategory>true</IsBlockCategory>
             <ItemIds>
+                <string>Reactor/LargeBlockLargeGenerator3</string>
                 <!-- Cannons -->
                 <string>LargeGatlingTurret/LargeVulcan</string>
                 <string>LargeMissileTurret/40mmBofors</string>
