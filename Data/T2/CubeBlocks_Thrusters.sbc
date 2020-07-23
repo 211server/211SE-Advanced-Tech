@@ -19,12 +19,12 @@
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="5"/>
-                <Component Subtype="Construction" Count="5"/>
-                <Component Subtype="LargeTube" Count="5"/>
-                <Component Subtype="Thrust" Count="5"/>
-                <Component Subtype="Construction" Count="5"/>
-                <Component Subtype="SteelPlate" Count="5"/>
+                <Component Subtype="SteelPlate" Count="2"/>
+                <Component Subtype="Construction" Count="2"/>
+                <Component Subtype="LargeTube" Count="2"/>
+                <Component Subtype="Thrust" Count="2"/>
+                <Component Subtype="Construction" Count="2"/>
+                <Component Subtype="SteelPlate" Count="2"/>
             </Components>
             <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
@@ -54,7 +54,7 @@
             <BlockPairName>SmallThrust2</BlockPairName>
             <Center x="0" y="0" z="1"/>
             <MirroringZ>Y</MirroringZ>
-            <BuildTimeSeconds>20</BuildTimeSeconds>
+            <BuildTimeSeconds>15</BuildTimeSeconds>
             <EdgeType>Light</EdgeType>
 
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
@@ -112,12 +112,12 @@
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="5"/>
-                <Component Subtype="Construction" Count="5"/>
-                <Component Subtype="LargeTube" Count="25"/>
-                <Component Subtype="Thrust" Count="60"/>
-                <Component Subtype="Construction" Count="5"/>
-                <Component Subtype="SteelPlate" Count="20"/>
+                <Component Subtype="SteelPlate" Count="2"/>
+                <Component Subtype="Construction" Count="2"/>
+                <Component Subtype="LargeTube" Count="10"/>
+                <Component Subtype="Thrust" Count="24"/>
+                <Component Subtype="Construction" Count="2"/>
+                <Component Subtype="SteelPlate" Count="8"/>
             </Components>
             <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
@@ -148,7 +148,7 @@
             <Center x="1" y="0" z="2"/>
             <MirroringY>Z</MirroringY>
             <MirroringZ>Y</MirroringZ>
-            <BuildTimeSeconds>40</BuildTimeSeconds>
+            <BuildTimeSeconds>30</BuildTimeSeconds>
             <EdgeType>Light</EdgeType>
 
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
@@ -207,12 +207,12 @@
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="75"/>
-                <Component Subtype="Construction" Count="200"/>
-                <Component Subtype="LargeTube" Count="40"/>
-                <Component Subtype="Thrust" Count="400"/>
-                <Component Subtype="Construction" Count="100"/>
-                <Component Subtype="SteelPlate" Count="50"/>
+                <Component Subtype="SteelPlate" Count="30"/>
+                <Component Subtype="Construction" Count="80"/>
+                <Component Subtype="LargeTube" Count="16"/>
+                <Component Subtype="Thrust" Count="200"/>
+                <Component Subtype="Construction" Count="40"/>
+                <Component Subtype="SteelPlate" Count="20"/>
             </Components>
             <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
@@ -244,10 +244,10 @@
             <Center x="0" y="0" z="1"/>
             <MirroringZ>Y</MirroringZ>
             <EdgeType>Light</EdgeType>
-            <BuildTimeSeconds>80</BuildTimeSeconds>
+            <BuildTimeSeconds>60</BuildTimeSeconds>
 
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
-            <ForceMagnitude>690200</ForceMagnitude>
+            <ForceMagnitude>720000</ForceMagnitude>
             <MaxPowerConsumption>6.72</MaxPowerConsumption>
             <MinPowerConsumption>0.000004</MinPowerConsumption>
             <SlowdownFactor>1</SlowdownFactor>
@@ -300,12 +300,12 @@
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="500"/>
-                <Component Subtype="Construction" Count="350"/>
-                <Component Subtype="LargeTube" Count="200"/>
-                <Component Subtype="Thrust" Count="4800"/>
-                <Component Subtype="Construction" Count="150"/>
-                <Component Subtype="SteelPlate" Count="250"/>
+                <Component Subtype="SteelPlate" Count="200"/>
+                <Component Subtype="Construction" Count="140"/>
+                <Component Subtype="LargeTube" Count="80"/>
+                <Component Subtype="Thrust" Count="2000"/>
+                <Component Subtype="Construction" Count="60"/>
+                <Component Subtype="SteelPlate" Count="100"/>
             </Components>
             <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
@@ -340,10 +340,10 @@
             <MirroringY>Z</MirroringY>
             <MirroringZ>Y</MirroringZ>
             <EdgeType>Light</EdgeType>
-            <BuildTimeSeconds>180</BuildTimeSeconds>
+            <BuildTimeSeconds>135</BuildTimeSeconds>
 
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
-            <ForceMagnitude>8640000</ForceMagnitude>
+            <ForceMagnitude>9000000</ForceMagnitude>
             <MaxPowerConsumption>67.2</MaxPowerConsumption>
             <MinPowerConsumption>0.000004</MinPowerConsumption>
             <SlowdownFactor>1</SlowdownFactor>
@@ -398,12 +398,12 @@
             <ThrusterType>Hydrogen</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="500"/>
-                <Component Subtype="Construction" Count="750"/>
-                <Component Subtype="MetalGrid" Count="1250"/>
-                <Component Subtype="LargeTube" Count="200"/>
-                <Component Subtype="Construction" Count="150"/>
-                <Component Subtype="SteelPlate" Count="250"/>
+                <Component Subtype="SteelPlate" Count="200"/>
+                <Component Subtype="Construction" Count="300"/>
+                <Component Subtype="MetalGrid" Count="500"/>
+                <Component Subtype="LargeTube" Count="80"/>
+                <Component Subtype="Construction" Count="60"/>
+                <Component Subtype="SteelPlate" Count="100"/>
             </Components>
             <CriticalComponent Subtype="LargeTube" Index="0"/>
             <Center x="1" y="1" z="2"/>
@@ -441,13 +441,13 @@
             <MirroringY>Z</MirroringY>
             <MirroringZ>Y</MirroringZ>
             <EdgeType>Light</EdgeType>
-            <BuildTimeSeconds>180</BuildTimeSeconds>
+            <BuildTimeSeconds>135</BuildTimeSeconds>
             <FuelConverter>
                 <FuelId>
                     <TypeId>GasProperties</TypeId>
                     <SubtypeId>Hydrogen</SubtypeId>
                 </FuelId>
-                <Efficiency>2</Efficiency>
+                <Efficiency>1</Efficiency>
             </FuelConverter>
             <MaxPowerConsumption>15</MaxPowerConsumption>
             <MinPowerConsumption>0.000000002</MinPowerConsumption>
@@ -500,12 +500,12 @@
             <ThrusterType>Hydrogen</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="15"/>
+                <Component Subtype="SteelPlate" Count="30"/>
+                <Component Subtype="Construction" Count="80"/>
+                <Component Subtype="MetalGrid" Count="80"/>
+                <Component Subtype="LargeTube" Count="16"/>
                 <Component Subtype="Construction" Count="40"/>
-                <Component Subtype="MetalGrid" Count="40"/>
-                <Component Subtype="LargeTube" Count="8"/>
-                <Component Subtype="Construction" Count="20"/>
-                <Component Subtype="SteelPlate" Count="10"/>
+                <Component Subtype="SteelPlate" Count="20"/>
             </Components>
             <CriticalComponent Subtype="LargeTube" Index="0"/>
             <MountPoints>
@@ -540,7 +540,7 @@
             <Center x="0" y="0" z="0"/>
             <MirroringZ>Y</MirroringZ>
             <EdgeType>Light</EdgeType>
-            <BuildTimeSeconds>80</BuildTimeSeconds>
+            <BuildTimeSeconds>60</BuildTimeSeconds>
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
             <ForceMagnitude>2160000</ForceMagnitude>
             <SlowdownFactor>1</SlowdownFactor>
@@ -549,7 +549,7 @@
                     <TypeId>GasProperties</TypeId>
                     <SubtypeId>Hydrogen</SubtypeId>
                 </FuelId>
-                <Efficiency>2</Efficiency>
+                <Efficiency>1</Efficiency>
             </FuelConverter>
             <MaxPowerConsumption>2.5</MaxPowerConsumption>
             <MinPowerConsumption>0.000000002</MinPowerConsumption>
@@ -599,12 +599,12 @@
             <ThrusterType>Hydrogen</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="100"/>
-                <Component Subtype="Construction" Count="100"/>
-                <Component Subtype="MetalGrid" Count="110"/>
-                <Component Subtype="LargeTube" Count="50"/>
-                <Component Subtype="Construction" Count="50"/>
-                <Component Subtype="SteelPlate" Count="50"/>
+                <Component Subtype="SteelPlate" Count="40"/>
+                <Component Subtype="Construction" Count="40"/>
+                <Component Subtype="MetalGrid" Count="44"/>
+                <Component Subtype="LargeTube" Count="20"/>
+                <Component Subtype="Construction" Count="20"/>
+                <Component Subtype="SteelPlate" Count="20"/>
             </Components>
             <CriticalComponent Subtype="LargeTube" Index="0"/>
             <Center x="1" y="1" z="2"/>
@@ -642,13 +642,13 @@
             <MirroringY>Z</MirroringY>
             <MirroringZ>Y</MirroringZ>
             <EdgeType>Light</EdgeType>
-            <BuildTimeSeconds>40</BuildTimeSeconds>
+            <BuildTimeSeconds>30</BuildTimeSeconds>
             <FuelConverter>
                 <FuelId>
                     <TypeId>GasProperties</TypeId>
                     <SubtypeId>Hydrogen</SubtypeId>
                 </FuelId>
-                <Efficiency>2</Efficiency>
+                <Efficiency>1</Efficiency>
             </FuelConverter>
             <MaxPowerConsumption>1.2</MaxPowerConsumption>
             <MinPowerConsumption>0.000000002</MinPowerConsumption>
@@ -700,12 +700,12 @@
             <ThrusterType>Hydrogen</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
+                <Component Subtype="SteelPlate" Count="4"/>
+                <Component Subtype="Construction" Count="20"/>
+                <Component Subtype="MetalGrid" Count="8"/>
+                <Component Subtype="LargeTube" Count="4"/>
+                <Component Subtype="Construction" Count="10"/>
                 <Component Subtype="SteelPlate" Count="10"/>
-                <Component Subtype="Construction" Count="50"/>
-                <Component Subtype="MetalGrid" Count="20"/>
-                <Component Subtype="LargeTube" Count="10"/>
-                <Component Subtype="Construction" Count="25"/>
-                <Component Subtype="SteelPlate" Count="25"/>
             </Components>
             <CriticalComponent Subtype="LargeTube" Index="0"/>
             <MountPoints>
@@ -740,7 +740,7 @@
             <Center x="0" y="0" z="0"/>
             <MirroringZ>Y</MirroringZ>
             <EdgeType>Light</EdgeType>
-            <BuildTimeSeconds>20</BuildTimeSeconds>
+            <BuildTimeSeconds>15</BuildTimeSeconds>
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
             <ForceMagnitude>196800</ForceMagnitude>
             <FuelConverter>
@@ -748,7 +748,7 @@
                     <TypeId>GasProperties</TypeId>
                     <SubtypeId>Hydrogen</SubtypeId>
                 </FuelId>
-                <Efficiency>2</Efficiency>
+                <Efficiency>1</Efficiency>
             </FuelConverter>
             <MaxPowerConsumption>0.25</MaxPowerConsumption>
             <MinPowerConsumption>0.000000002</MinPowerConsumption>
@@ -799,13 +799,13 @@
             <ThrusterType>Atmospheric</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="500"/>
-                <Component Subtype="Construction" Count="200"/>
-                <Component Subtype="LargeTube" Count="250"/>
-                <Component Subtype="MetalGrid" Count="200"/>
-                <Component Subtype="Motor" Count="5500"/>
-                <Component Subtype="Construction" Count="100"/>
-                <Component Subtype="SteelPlate" Count="650"/>
+                <Component Subtype="SteelPlate" Count="200"/>
+                <Component Subtype="Construction" Count="80"/>
+                <Component Subtype="LargeTube" Count="100"/>
+                <Component Subtype="MetalGrid" Count="80"/>
+                <Component Subtype="Motor" Count="2200"/>
+                <Component Subtype="Construction" Count="40"/>
+                <Component Subtype="SteelPlate" Count="260"/>
             </Components>
             <CriticalComponent Subtype="Motor" Index="0"/>
             <MountPoints>
@@ -839,7 +839,7 @@
             <Center x="1" y="1" z="2"/>
             <MirroringZ>Y</MirroringZ>
             <EdgeType>Light</EdgeType>
-            <BuildTimeSeconds>180</BuildTimeSeconds>
+            <BuildTimeSeconds>135</BuildTimeSeconds>
 
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
             <ForceMagnitude>12960000</ForceMagnitude>
@@ -905,13 +905,13 @@
             <ThrusterType>Atmospheric</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="75"/>
-                <Component Subtype="Construction" Count="150"/>
-                <Component Subtype="LargeTube" Count="40"/>
-                <Component Subtype="MetalGrid" Count="50"/>
-                <Component Subtype="Motor" Count="550"/>
-                <Component Subtype="Construction" Count="100"/>
-                <Component Subtype="SteelPlate" Count="100"/>
+                <Component Subtype="SteelPlate" Count="30"/>
+                <Component Subtype="Construction" Count="60"/>
+                <Component Subtype="LargeTube" Count="16"/>
+                <Component Subtype="MetalGrid" Count="20"/>
+                <Component Subtype="Motor" Count="220"/>
+                <Component Subtype="Construction" Count="40"/>
+                <Component Subtype="SteelPlate" Count="40"/>
             </Components>
             <CriticalComponent Subtype="Motor" Index="0"/>
             <MountPoints>
@@ -946,7 +946,7 @@
             <MirroringZ>Y</MirroringZ>
             <MirroringY>Z</MirroringY>
             <EdgeType>Light</EdgeType>
-            <BuildTimeSeconds>80</BuildTimeSeconds>
+            <BuildTimeSeconds>60</BuildTimeSeconds>
 
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
             <ForceMagnitude>1296000</ForceMagnitude>
@@ -1011,13 +1011,13 @@
             <ThrusterType>Atmospheric</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="50"/>
-                <Component Subtype="Construction" Count="100"/>
-                <Component Subtype="LargeTube" Count="20"/>
-                <Component Subtype="MetalGrid" Count="40"/>
-                <Component Subtype="Motor" Count="450"/>
-                <Component Subtype="Construction" Count="50"/>
-                <Component Subtype="SteelPlate" Count="50"/>
+                <Component Subtype="SteelPlate" Count="20"/>
+                <Component Subtype="Construction" Count="40"/>
+                <Component Subtype="LargeTube" Count="8"/>
+                <Component Subtype="MetalGrid" Count="16"/>
+                <Component Subtype="Motor" Count="180"/>
+                <Component Subtype="Construction" Count="20"/>
+                <Component Subtype="SteelPlate" Count="20"/>
             </Components>
             <CriticalComponent Subtype="Motor" Index="0"/>
             <MountPoints>
@@ -1051,7 +1051,7 @@
             <Center x="1" y="1" z="2"/>
             <MirroringZ>Y</MirroringZ>
             <EdgeType>Light</EdgeType>
-            <BuildTimeSeconds>40</BuildTimeSeconds>
+            <BuildTimeSeconds>30</BuildTimeSeconds>
 
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
             <ForceMagnitude>1152000</ForceMagnitude>
@@ -1118,13 +1118,13 @@
             <ThrusterType>Atmospheric</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="10"/>
-                <Component Subtype="Construction" Count="100"/>
-                <Component Subtype="LargeTube" Count="5"/>
-                <Component Subtype="MetalGrid" Count="5"/>
-                <Component Subtype="Motor" Count="90"/>
-                <Component Subtype="Construction" Count="10"/>
-                <Component Subtype="SteelPlate" Count="5"/>
+                <Component Subtype="SteelPlate" Count="4"/>
+                <Component Subtype="Construction" Count="40"/>
+                <Component Subtype="LargeTube" Count="2"/>
+                <Component Subtype="MetalGrid" Count="2"/>
+                <Component Subtype="Motor" Count="32"/>
+                <Component Subtype="Construction" Count="4"/>
+                <Component Subtype="SteelPlate" Count="2"/>
             </Components>
             <CriticalComponent Subtype="Motor" Index="0"/>
             <MountPoints>
@@ -1157,7 +1157,7 @@
             <BlockPairName>SmallAtmoThrust2</BlockPairName>
             <Center x="0" y="0" z="1"/>
             <MirroringZ>Y</MirroringZ>
-            <BuildTimeSeconds>20</BuildTimeSeconds>
+            <BuildTimeSeconds>15</BuildTimeSeconds>
             <EdgeType>Light</EdgeType>
 
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
