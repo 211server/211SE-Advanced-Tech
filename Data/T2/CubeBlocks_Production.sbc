@@ -140,7 +140,7 @@
             <IsAirTight>true</IsAirTight>
         </Definition>
 
-        <Definition xsi:type="MyObjectBuilder_OxygenGeneratorDefinition">
+        <Definition xsi:type="MyObjectBuilder_OxygenGeneratorDefinition">   <!-- components*5 buildTime*2 power*5 output*5 MaxVolume*2.5-->
             <Id>
                 <TypeId>OxygenGenerator</TypeId>
                 <SubtypeId>LargeOxygenGenerator2</SubtypeId>
@@ -154,12 +154,12 @@
             <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Large\OxygenGenerator.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="1100"/>
-                <Component Subtype="Construction" Count="50"/>
-                <Component Subtype="LargeTube" Count="20"/>
-                <Component Subtype="Motor" Count="40"/>
-                <Component Subtype="Computer" Count="50"/>
-                <Component Subtype="SteelPlate" Count="100"/>
+                <Component Subtype="SteelPlate" Count="550"/>
+                <Component Subtype="Construction" Count="25"/>
+                <Component Subtype="LargeTube" Count="10"/>
+                <Component Subtype="Motor" Count="20"/>
+                <Component Subtype="Computer" Count="25"/>
+                <Component Subtype="SteelPlate" Count="50"/>
             </Components>
             <CriticalComponent Subtype="Computer" Index="0"/>
             <MountPoints>
@@ -182,14 +182,14 @@
             <ResourceSourceGroup>Reactors</ResourceSourceGroup>
             <ResourceSinkGroup>Factory</ResourceSinkGroup>
             <IceConsumptionPerSecond>250</IceConsumptionPerSecond>
-            <InventoryMaxVolume>4</InventoryMaxVolume>
+            <InventoryMaxVolume>10</InventoryMaxVolume>
             <InventorySize>
                 <X>2</X>
                 <Y>2</Y>
                 <Z>2</Z>
             </InventorySize>
-            <StandbyPowerConsumption>0.01</StandbyPowerConsumption>
-            <OperationalPowerConsumption>5</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.05</StandbyPowerConsumption>
+            <OperationalPowerConsumption>2.5</OperationalPowerConsumption>
             <ProducedGases>
                 <GasInfo>
                     <Id>
@@ -224,6 +224,99 @@
             <PCU>50</PCU>
         </Definition>
 
+        <Definition xsi:type="MyObjectBuilder_OxygenGeneratorDefinition">   <!-- components*5 buildTime*2 power*5 output*5 MaxVolume*2.5-->
+            <Id>
+                <TypeId>OxygenGenerator</TypeId>
+                <SubtypeId>OxygenGeneratorSmall2</SubtypeId>
+            </Id>
+            <DisplayName>氢气/氧气制造机II</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\OxygenGeneratorSmall.dds</Icon>
+            <Description>分级异质全解水催化剂</Description>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="2" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Small\OxygenGenerator.mwm</Model>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+                <Component Subtype="SteelPlate" Count="30" />
+                <Component Subtype="Construction" Count="40" />
+                <Component Subtype="LargeTube" Count="10" />
+                <Component Subtype="Motor" Count="5" />
+                <Component Subtype="Computer" Count="15" />
+                <Component Subtype="SteelPlate" Count="10" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="3" EndY="3" />
+                <MountPoint Side="Right" StartX="1" StartY="0" EndX="2" EndY="3" />
+                <MountPoint Side="Right" StartX="0" StartY="1" EndX="1" EndY="2" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="3" />
+                <MountPoint Side="Left" StartX="1" StartY="1" EndX="2" EndY="2" />
+                <MountPoint Side="Top" StartX="0" StartY="1" EndX="3" EndY="2" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Top" StartX="2" StartY="0" EndX="3" EndY="1" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="1" />
+                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2" />
+                <MountPoint Side="Bottom" StartX="2" StartY="1" EndX="3" EndY="2" />
+                <MountPoint Side="Back" StartX="0" StartY="1" EndX="3" EndY="2" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\OxygenGeneratorConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\OxygenGeneratorConstruction_2.mwm" />
+            </BuildProgressModels>
+            <Center x="1" y="1" z="0" />
+            <BuildTimeSeconds>28</BuildTimeSeconds>
+            <EdgeType>Light</EdgeType>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <IceConsumptionPerSecond>50</IceConsumptionPerSecond>
+            <InventoryMaxVolume>2.5</InventoryMaxVolume>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <StandbyPowerConsumption>0.005</StandbyPowerConsumption>
+            <OperationalPowerConsumption>0.5</OperationalPowerConsumption>
+            <ProducedGases>
+                <GasInfo>
+                    <Id>
+                        <TypeId>GasProperties</TypeId>
+                        <SubtypeId>Oxygen</SubtypeId>
+                    </Id>
+                    <IceToGasRatio>10</IceToGasRatio>
+                </GasInfo>
+                <GasInfo>
+                    <Id>
+                        <TypeId>GasProperties</TypeId>
+                        <SubtypeId>Hydrogen</SubtypeId>
+                    </Id>
+                    <IceToGasRatio>10</IceToGasRatio>
+                </GasInfo>
+            </ProducedGases>
+            <BlueprintClasses>
+                <Class>Ice</Class>
+                <Class>OxygenBottles</Class>
+                <Class>HydrogenBottles</Class>
+            </BlueprintClasses>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <BlockPairName>OxygenGenerator2</BlockPairName>
+            <GenerateSound>BlockOxyGenProcess</GenerateSound>
+            <IdleSound>BlockOxyGenIdle</IdleSound>
+            <DestroyEffect>Explosion_Missile</DestroyEffect>
+            <DestroySound>WepSmallMissileExpl</DestroySound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>50</PCU>
+            <MirroringX>Z</MirroringX>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+        </Definition>
+        
         <Definition xsi:type="MyObjectBuilder_OxygenFarmDefinition">
             <Id>
                 <TypeId>OxygenFarm</TypeId>

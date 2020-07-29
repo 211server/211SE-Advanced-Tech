@@ -15,11 +15,17 @@
                 <string>Refinery/LargeRefinery2</string>
                 <string>Assembler/LargeAssembler2</string>
                 <string>OxygenGenerator/LargeOxygenGenerator2</string>
+                <string>OxygenGenerator/OxygenGeneratorSmall2</string>
                 <string>OxygenFarm/LargeBlockOxygenFarm2</string>
                 <string>BatteryBlock/LargeBlockBatteryBlock2</string>
+                <string>BatteryBlock/SmallBlockBatteryBlock2</string>
+                <string>BatteryBlock/SmallBlockSmallBatteryBlock2</string>
                 <string>Reactor/LargeBlockLargeGenerator2</string>
+                <string>Reactor/LargeBlockSmallGenerator2</string>
+                <string>Reactor/SmallBlockLargeGenerator2</string>
                 <string>WindTurbine/LargeBlockWindTurbine2</string>
                 <string>SolarPanel/LargeBlockSolarPanel2</string>
+                <string>SolarPanel/SmallBlockSolarPanel2</string>
                 <string>Drill/LargeBlockDrill2</string>
                 <string>OreDetector/LargeOreDetector2</string>
                 <string>OreDetector/SmallBlockOreDetector2</string>
@@ -36,6 +42,9 @@
                 <string>Thrust/SmallBlockLargeAtmosphericThrust2</string>
                 <string>Thrust/SmallBlockSmallAtmosphericThrust2</string>
                 <string>CargoContainer/LargeBlockLargeContainer2</string>
+                <string>OxygenTank/LargeHydrogenTank2</string>
+                <string>OxygenTank/SmallHydrogenTank2</string>
+                <string>OxygenTank/OxygenTankLarge2</string>
                 <!-- NanoBot -->
                 <string>ShipWelder/SELtdLargeNanobotBuildAndRepairSystem</string>
                 <string>ShipWelder/SELtdSmallNanobotBuildAndRepairSystem</string>

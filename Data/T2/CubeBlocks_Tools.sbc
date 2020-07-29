@@ -60,11 +60,11 @@
             <Center x="0" y="0" z="2"/>
 
             <ResourceSinkGroup>Defense</ResourceSinkGroup>
-            <!-- origin 1.9 -->
-            <SensorRadius>4.8</SensorRadius>
+            <!-- origin 1.9/2.8 -->
+            <SensorRadius>5</SensorRadius>
             <SensorOffset>2.8</SensorOffset>
-            <!-- origin 1.9 -->
-            <CutOutRadius>4.8</CutOutRadius>
+            <!-- origin 1.9/2.8 -->
+            <CutOutRadius>5</CutOutRadius>
             <CutOutOffset>2.8</CutOutOffset>
             <ParticleOffset>
                 <X>0</X>
