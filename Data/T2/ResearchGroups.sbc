@@ -19,14 +19,23 @@
             <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="OxygenGenerator2Group"/>
             <Members>
                 <BlockId Type="MyObjectBuilder_OxygenGenerator" Subtype="LargeOxygenGenerator2"/>
+                <BlockId Type="MyObjectBuilder_OxygenGenerator" Subtype="OxygenGeneratorSmall2"/>
+            </Members>
+        </ResearchGroup>
+        
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="OxygenFarm2Group"/>
+            <Members>
                 <BlockId Type="MyObjectBuilder_OxygenFarm" Subtype="LargeBlockOxygenFarm2"/>
             </Members>
         </ResearchGroup>
-
+        
         <ResearchGroup xsi:type="ResearchGroup">
             <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="BatteryBlock2Group"/>
             <Members>
                 <BlockId Type="MyObjectBuilder_BatteryBlock" Subtype="LargeBlockBatteryBlock2"/>
+                <BlockId Type="MyObjectBuilder_BatteryBlock" Subtype="SmallBlockBatteryBlock2"/>
+                <BlockId Type="MyObjectBuilder_BatteryBlock" Subtype="SmallBlockSmallBatteryBlock2"/>
             </Members>
         </ResearchGroup>
 
@@ -34,6 +43,8 @@
             <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="Reactor2Group"/>
             <Members>
                 <BlockId Type="MyObjectBuilder_Reactor" Subtype="LargeBlockLargeGenerator2"/>
+                <BlockId Type="MyObjectBuilder_Reactor" Subtype="LargeBlockSmallGenerator2"/>
+                <BlockId Type="MyObjectBuilder_Reactor" Subtype="SmallBlockLargeGenerator2"/>
             </Members>
         </ResearchGroup>
 
@@ -41,6 +52,7 @@
             <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="SolarPanel2Group"/>
             <Members>
                 <BlockId Type="MyObjectBuilder_SolarPanel" Subtype="LargeBlockSolarPanel2"/>
+                <BlockId Type="MyObjectBuilder_SolarPanel" Subtype="SmallBlockSolarPanel2"/>
                 <BlockId Type="MyObjectBuilder_WindTurbine" Subtype="LargeBlockWindTurbine2"/>
             </Members>
         </ResearchGroup>
@@ -114,6 +126,21 @@
             <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="CargoContainer2Group"/>
             <Members>
                 <BlockId Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockLargeContainer2"/>
+            </Members>
+        </ResearchGroup>
+
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="HydrogenTank2Group"/>
+            <Members>
+                <BlockId Type="MyObjectBuilder_OxygenTank" Subtype="LargeHydrogenTank2"/>
+                <BlockId Type="MyObjectBuilder_OxygenTank" Subtype="SmallHydrogenTank2"/>
+            </Members>
+        </ResearchGroup>
+        
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="OxygenTank2Group"/>
+            <Members>
+                <BlockId Type="MyObjectBuilder_OxygenTank" Subtype="OxygenTankLarge2"/>
             </Members>
         </ResearchGroup>
     </ResearchGroups>
