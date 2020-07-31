@@ -210,5 +210,18 @@
                 <GroupSubtype>OxygenGenerator2Group</GroupSubtype>
             </UnlockedByGroups>
         </ResearchBlock>
+
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Gyro" Subtype="LargeBlockGyro2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>Gyro</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Gyro" Subtype="SmallBlockGyro2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>Gyro</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
     </ResearchBlocks>
 </Definitions>

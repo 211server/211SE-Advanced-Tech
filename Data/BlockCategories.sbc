@@ -45,6 +45,7 @@
                 <string>OxygenTank/LargeHydrogenTank2</string>
                 <string>OxygenTank/SmallHydrogenTank2</string>
                 <string>OxygenTank/OxygenTankLarge2</string>
+                <string>Gyro/LargeBlockGyro2</string>
                 <!-- NanoBot -->
                 <string>ShipWelder/SELtdLargeNanobotBuildAndRepairSystem</string>
                 <string>ShipWelder/SELtdSmallNanobotBuildAndRepairSystem</string>

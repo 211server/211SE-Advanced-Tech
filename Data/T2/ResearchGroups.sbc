@@ -143,5 +143,20 @@
                 <BlockId Type="MyObjectBuilder_OxygenTank" Subtype="OxygenTankLarge2"/>
             </Members>
         </ResearchGroup>
+
+        <ResearchGroup xsi:type="ResearchGroup">    <!--Gyroscope-->
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="Gyro"/>
+            <Members>
+                <BlockId Type="MyObjectBuilder_Gyro" Subtype="LargeBlockGyro"/>
+                <BlockId Type="MyObjectBuilder_Gyro" Subtype="SmallBlockGyro"/>
+            </Members>
+        </ResearchGroup>
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="Gyro2"/>
+            <Members>
+                <BlockId Type="MyObjectBuilder_Gyro" Subtype="LargeBlockGyro2"/>
+                <BlockId Type="MyObjectBuilder_Gyro" Subtype="SmallBlockGyro2"/>
+            </Members>
+        </ResearchGroup>
     </ResearchGroups>
 </Definitions>
