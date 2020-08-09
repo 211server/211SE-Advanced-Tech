@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <CubeBlocks>
-        <Definition xsi:type="MyObjectBuilder_ShipDrillDefinition"> <!-- components*10 radius=4.8 buildTime*2 -->
+        <!-- components*5 radius=4.8 buildTime*2 -->
+        <Definition xsi:type="MyObjectBuilder_ShipDrillDefinition">
             <Id>
                 <TypeId>Drill</TypeId>
                 <SubtypeId>LargeBlockDrill2</SubtypeId>
             </Id>
             <DisplayName>钻头II</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\drill.dds</Icon>
-            <Description>多晶金刚石切削齿钻头</Description>
+            <Description>Description_Drill</Description>
             <CubeSize>Large</CubeSize>
             <GuiVisible>false</GuiVisible>
             <BlockTopology>TriangleMesh</BlockTopology>
@@ -19,12 +20,12 @@
             <UseModelIntersection>true</UseModelIntersection>
             <UsesDeformation>false</UsesDeformation>
             <Components>
-                <Component Subtype="SteelPlate" Count="1800"/>
-                <Component Subtype="Construction" Count="400"/>
-                <Component Subtype="LargeTube" Count="120"/>
-                <Component Subtype="Motor" Count="50"/>
-                <Component Subtype="Computer" Count="50"/>
-                <Component Subtype="SteelPlate" Count="1200"/>
+                <Component Subtype="SteelPlate" Count="900"/>
+                <Component Subtype="Construction" Count="200"/>
+                <Component Subtype="LargeTube" Count="60"/>
+                <Component Subtype="Motor" Count="25"/>
+                <Component Subtype="Computer" Count="25"/>
+                <Component Subtype="SteelPlate" Count="600"/>
             </Components>
             <CriticalComponent Subtype="Computer" Index="0"/>
             <MountPoints>
@@ -81,26 +82,28 @@
             <PCU>190</PCU>
         </Definition>
 
-        <Definition xsi:type="MyObjectBuilder_OreDetectorDefinition">   <!-- components*10 range*2 buildTime*2 -->
+        <!-- Region OreDetector -->
+        <!-- components*5 range*2 buildTime*2 -->
+        <Definition xsi:type="MyObjectBuilder_OreDetectorDefinition">
             <Id>
                 <TypeId>OreDetector</TypeId>
                 <SubtypeId>LargeOreDetector2</SubtypeId>
             </Id>
             <DisplayName>矿物探测器II</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\detector.dds</Icon>
-            <Description>微磁场地下金属探测器</Description>
+            <Description>Description_OreDetector</Description>
             <CubeSize>Large</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
             <Size x="1" y="1" z="2"/>
             <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Large\OreDetector.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="300"/>
-                <Component Subtype="Construction" Count="400"/>
-                <Component Subtype="Motor" Count="50"/>
-                <Component Subtype="Computer" Count="250"/>
-                <Component Subtype="Detector" Count="200"/>
-                <Component Subtype="SteelPlate" Count="200"/>
+                <Component Subtype="SteelPlate" Count="150"/>
+                <Component Subtype="Construction" Count="200"/>
+                <Component Subtype="Motor" Count="25"/>
+                <Component Subtype="Computer" Count="125"/>
+                <Component Subtype="Detector" Count="100"/>
+                <Component Subtype="SteelPlate" Count="100"/>
             </Components>
             <CriticalComponent Subtype="Detector" Index="0"/>
             <Center x="0" y="0" z="1"/>
@@ -130,27 +133,26 @@
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <PCU>40</PCU>
         </Definition>
-
-        <Definition xsi:type="MyObjectBuilder_OreDetectorDefinition">   <!-- components*10 range*2 buildTime*2 -->
+        <Definition xsi:type="MyObjectBuilder_OreDetectorDefinition">
             <Id>
                 <TypeId>OreDetector</TypeId>
                 <SubtypeId>SmallBlockOreDetector2</SubtypeId>
             </Id>
             <DisplayName>矿物探测器II</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\detector.dds</Icon>
-            <Description>微磁场地下金属探测器</Description>
+            <Description>Description_OreDetector</Description>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
             <Size x="1" y="1" z="2"/>
             <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\OreDetector.mwm</Model>
             <Components>
+                <Component Subtype="SteelPlate" Count="5"/>
+                <Component Subtype="Construction" Count="10"/>
+                <Component Subtype="Motor" Count="5"/>
+                <Component Subtype="Computer" Count="5"/>
+                <Component Subtype="Detector" Count="5"/>
                 <Component Subtype="SteelPlate" Count="10"/>
-                <Component Subtype="Construction" Count="20"/>
-                <Component Subtype="Motor" Count="10"/>
-                <Component Subtype="Computer" Count="10"/>
-                <Component Subtype="Detector" Count="10"/>
-                <Component Subtype="SteelPlate" Count="20"/>
             </Components>
             <CriticalComponent Subtype="Detector" Index="0"/>
             <Center x="0" y="0" z="1"/>
@@ -179,5 +181,6 @@
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <PCU>40</PCU>
         </Definition>
+        <!-- End Region OreDetector -->
     </CubeBlocks>
 </Definitions>

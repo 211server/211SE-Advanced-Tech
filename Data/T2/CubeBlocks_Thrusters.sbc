@@ -1,15 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <CubeBlocks>
-        <!-- Region Thrust-->
-        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">    <!-- components*4 buildTime*1.5 power*4 force*4 -->
+        <!-- Region IonThrusters -->
+        <!-- components*2 buildTime*1.5 power*4 force*4 -->
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>SmallBlockSmallThrust2</SubtypeId>
             </Id>
             <DisplayName>小型离子推进器II</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\thrust.dds</Icon>
-            <Description>磁聚焦霍尔推力器</Description>
+            <Description>Description_IonThrust</Description>
             <CubeSize>Small</CubeSize>
             <GuiVisible>false</GuiVisible>
             <BlockTopology>TriangleMesh</BlockTopology>
@@ -19,12 +20,12 @@
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="4"/>
-                <Component Subtype="Construction" Count="4"/>
-                <Component Subtype="LargeTube" Count="4"/>
-                <Component Subtype="Thrust" Count="4"/>
-                <Component Subtype="Construction" Count="4"/>
-                <Component Subtype="SteelPlate" Count="4"/>
+                <Component Subtype="SteelPlate" Count="2"/>
+                <Component Subtype="Construction" Count="2"/>
+                <Component Subtype="LargeTube" Count="2"/>
+                <Component Subtype="Thrust" Count="2"/>
+                <Component Subtype="Construction" Count="2"/>
+                <Component Subtype="SteelPlate" Count="2"/>
             </Components>
             <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
@@ -94,16 +95,20 @@
             <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <PCU>15</PCU>
+            <TieredUpdateTimes>
+                <unsignedInt>100</unsignedInt>
+                <unsignedInt>3600</unsignedInt>
+                <unsignedInt>0</unsignedInt>
+            </TieredUpdateTimes>
         </Definition>
-
-        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">    <!-- components*4 buildTime*1.5 power*4 force*4 -->
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>SmallBlockLargeThrust2</SubtypeId>
             </Id>
             <DisplayName>大型离子推进器II</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\thrust_large.dds</Icon>
-            <Description>磁聚焦霍尔推力器</Description>
+            <Description>Description_IonThrust</Description>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
             <Size x="3" y="2" z="4"/>
@@ -112,12 +117,12 @@
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="4"/>
-                <Component Subtype="Construction" Count="4"/>
-                <Component Subtype="LargeTube" Count="20"/>
-                <Component Subtype="Thrust" Count="48"/>
-                <Component Subtype="Construction" Count="4"/>
-                <Component Subtype="SteelPlate" Count="16"/>
+                <Component Subtype="SteelPlate" Count="2"/>
+                <Component Subtype="Construction" Count="2"/>
+                <Component Subtype="LargeTube" Count="10"/>
+                <Component Subtype="Thrust" Count="24"/>
+                <Component Subtype="Construction" Count="2"/>
+                <Component Subtype="SteelPlate" Count="8"/>
             </Components>
             <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
@@ -188,16 +193,20 @@
             <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <PCU>15</PCU>
+            <TieredUpdateTimes>
+                <unsignedInt>100</unsignedInt>
+                <unsignedInt>3600</unsignedInt>
+                <unsignedInt>0</unsignedInt>
+            </TieredUpdateTimes>
         </Definition>
-
-        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">    <!-- components*4 buildTime*1.5 power*4 force*4 -->
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>LargeBlockSmallThrust2</SubtypeId>
             </Id>
             <DisplayName>小型离子推进器II</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\thrust.dds</Icon>
-            <Description>磁聚焦霍尔推力器</Description>
+            <Description>Description_IonThrust</Description>
             <CubeSize>Large</CubeSize>
             <GuiVisible>false</GuiVisible>
             <BlockTopology>TriangleMesh</BlockTopology>
@@ -207,12 +216,12 @@
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="60"/>
-                <Component Subtype="Construction" Count="160"/>
-                <Component Subtype="LargeTube" Count="32"/>
-                <Component Subtype="Thrust" Count="320"/>
+                <Component Subtype="SteelPlate" Count="30"/>
                 <Component Subtype="Construction" Count="80"/>
-                <Component Subtype="SteelPlate" Count="40"/>
+                <Component Subtype="LargeTube" Count="16"/>
+                <Component Subtype="Thrust" Count="160"/>
+                <Component Subtype="Construction" Count="40"/>
+                <Component Subtype="SteelPlate" Count="20"/>
             </Components>
             <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
@@ -282,16 +291,20 @@
             <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <PCU>15</PCU>
+            <TieredUpdateTimes>
+                <unsignedInt>100</unsignedInt>
+                <unsignedInt>3600</unsignedInt>
+                <unsignedInt>0</unsignedInt>
+            </TieredUpdateTimes>
         </Definition>
-
-        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">    <!-- components*4 buildTime*1.5 power*4 force*4 -->
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>LargeBlockLargeThrust2</SubtypeId>
             </Id>
             <DisplayName>大型离子推进器II</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\thrust_large.dds</Icon>
-            <Description>磁聚焦霍尔推力器</Description>
+            <Description>Description_IonThrust</Description>
             <CubeSize>Large</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
             <Size x="3" y="2" z="4"/>
@@ -300,12 +313,12 @@
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="400"/>
-                <Component Subtype="Construction" Count="280"/>
-                <Component Subtype="LargeTube" Count="160"/>
-                <Component Subtype="Thrust" Count="3840"/>
-                <Component Subtype="Construction" Count="120"/>
                 <Component Subtype="SteelPlate" Count="200"/>
+                <Component Subtype="Construction" Count="140"/>
+                <Component Subtype="LargeTube" Count="80"/>
+                <Component Subtype="Thrust" Count="1920"/>
+                <Component Subtype="Construction" Count="60"/>
+                <Component Subtype="SteelPlate" Count="100"/>
             </Components>
             <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
@@ -378,18 +391,24 @@
             <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <PCU>15</PCU>
+            <TieredUpdateTimes>
+                <unsignedInt>100</unsignedInt>
+                <unsignedInt>3600</unsignedInt>
+                <unsignedInt>0</unsignedInt>
+            </TieredUpdateTimes>
         </Definition>
+        <!-- End Region IonThrusters -->
 
-        <!--HydrogenThrusters-->
-        <Definition
-                xsi:type="MyObjectBuilder_ThrustDefinition">    <!-- components*4 buildTime*1.5 efficiency*1 Consumption*4 force*4 -->
+        <!-- Region HydrogenThrusters -->
+        <!-- components*2 buildTime*1.5 efficiency*1 Consumption*4 force*4 -->
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>LargeBlockLargeHydrogenThrust2</SubtypeId>
             </Id>
             <DisplayName>大型氢动力推进器II</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\HydrogenThrusterLarge.dds</Icon>
-            <Description>分级燃烧膨胀循环</Description>
+            <Description>Description_HydrogenThrust</Description>
             <CubeSize>Large</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
             <Size x="3" y="3" z="3"/>
@@ -398,12 +417,12 @@
             <ThrusterType>Hydrogen</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="400"/>
-                <Component Subtype="Construction" Count="600"/>
-                <Component Subtype="MetalGrid" Count="1000"/>
-                <Component Subtype="LargeTube" Count="160"/>
-                <Component Subtype="Construction" Count="120"/>
                 <Component Subtype="SteelPlate" Count="200"/>
+                <Component Subtype="Construction" Count="300"/>
+                <Component Subtype="MetalGrid" Count="500"/>
+                <Component Subtype="LargeTube" Count="80"/>
+                <Component Subtype="Construction" Count="60"/>
+                <Component Subtype="SteelPlate" Count="100"/>
             </Components>
             <CriticalComponent Subtype="LargeTube" Index="0"/>
             <Center x="1" y="1" z="2"/>
@@ -480,17 +499,20 @@
             <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <PCU>15</PCU>
+            <TieredUpdateTimes>
+                <unsignedInt>100</unsignedInt>
+                <unsignedInt>3600</unsignedInt>
+                <unsignedInt>0</unsignedInt>
+            </TieredUpdateTimes>
         </Definition>
-
-        <Definition
-                xsi:type="MyObjectBuilder_ThrustDefinition">    <!-- components*4 buildTime*1.5 efficiency*1 Consumption*4 force*4 -->
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>LargeBlockSmallHydrogenThrust2</SubtypeId>
             </Id>
             <DisplayName>小型氢动力推进器II</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\HydrogenThrusterSmall.dds</Icon>
-            <Description>分级燃烧膨胀循环</Description>
+            <Description>Description_HydrogenThrust</Description>
             <CubeSize>Large</CubeSize>
             <GuiVisible>false</GuiVisible>
             <BlockTopology>TriangleMesh</BlockTopology>
@@ -500,12 +522,12 @@
             <ThrusterType>Hydrogen</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="60"/>
-                <Component Subtype="Construction" Count="160"/>
-                <Component Subtype="MetalGrid" Count="160"/>
-                <Component Subtype="LargeTube" Count="32"/>
+                <Component Subtype="SteelPlate" Count="30"/>
                 <Component Subtype="Construction" Count="80"/>
-                <Component Subtype="SteelPlate" Count="40"/>
+                <Component Subtype="MetalGrid" Count="80"/>
+                <Component Subtype="LargeTube" Count="16"/>
+                <Component Subtype="Construction" Count="40"/>
+                <Component Subtype="SteelPlate" Count="20"/>
             </Components>
             <CriticalComponent Subtype="LargeTube" Index="0"/>
             <MountPoints>
@@ -580,17 +602,20 @@
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <PCU>15</PCU>
             <IsAirTight>false</IsAirTight>
+            <TieredUpdateTimes>
+                <unsignedInt>100</unsignedInt>
+                <unsignedInt>3600</unsignedInt>
+                <unsignedInt>0</unsignedInt>
+            </TieredUpdateTimes>
         </Definition>
-
-        <Definition
-                xsi:type="MyObjectBuilder_ThrustDefinition">    <!-- components*4 buildTime*1.5 efficiency*1 Consumption*4 force*4 -->
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>SmallBlockLargeHydrogenThrust2</SubtypeId>
             </Id>
             <DisplayName>大型氢动力推进器II</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\HydrogenThrusterLarge.dds</Icon>
-            <Description>分级燃烧膨胀循环</Description>
+            <Description>Description_HydrogenThrust</Description>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
             <Size x="3" y="3" z="3"/>
@@ -599,12 +624,12 @@
             <ThrusterType>Hydrogen</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="80"/>
-                <Component Subtype="Construction" Count="80"/>
-                <Component Subtype="MetalGrid" Count="88"/>
-                <Component Subtype="LargeTube" Count="40"/>
-                <Component Subtype="Construction" Count="40"/>
                 <Component Subtype="SteelPlate" Count="40"/>
+                <Component Subtype="Construction" Count="40"/>
+                <Component Subtype="MetalGrid" Count="44"/>
+                <Component Subtype="LargeTube" Count="20"/>
+                <Component Subtype="Construction" Count="20"/>
+                <Component Subtype="SteelPlate" Count="20"/>
             </Components>
             <CriticalComponent Subtype="LargeTube" Index="0"/>
             <Center x="1" y="1" z="2"/>
@@ -680,17 +705,20 @@
             <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <PCU>15</PCU>
+            <TieredUpdateTimes>
+                <unsignedInt>100</unsignedInt>
+                <unsignedInt>3600</unsignedInt>
+                <unsignedInt>0</unsignedInt>
+            </TieredUpdateTimes>
         </Definition>
-
-        <Definition
-                xsi:type="MyObjectBuilder_ThrustDefinition">    <!-- components*4 buildTime*1.5 efficiency*1 Consumption*4 force*4 -->
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>SmallBlockSmallHydrogenThrust2</SubtypeId>
             </Id>
             <DisplayName>小型氢动力推进器II</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\HydrogenThrusterSmall.dds</Icon>
-            <Description>分级燃烧膨胀循环</Description>
+            <Description>Description_HydrogenThrust</Description>
             <CubeSize>Small</CubeSize>
             <GuiVisible>false</GuiVisible>
             <BlockTopology>TriangleMesh</BlockTopology>
@@ -700,12 +728,12 @@
             <ThrusterType>Hydrogen</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="8"/>
-                <Component Subtype="Construction" Count="40"/>
-                <Component Subtype="MetalGrid" Count="16"/>
-                <Component Subtype="LargeTube" Count="8"/>
+                <Component Subtype="SteelPlate" Count="4"/>
                 <Component Subtype="Construction" Count="20"/>
-                <Component Subtype="SteelPlate" Count="20"/>
+                <Component Subtype="MetalGrid" Count="8"/>
+                <Component Subtype="LargeTube" Count="4"/>
+                <Component Subtype="Construction" Count="10"/>
+                <Component Subtype="SteelPlate" Count="10"/>
             </Components>
             <CriticalComponent Subtype="LargeTube" Index="0"/>
             <MountPoints>
@@ -780,17 +808,24 @@
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <PCU>15</PCU>
             <IsAirTight>false</IsAirTight>
+            <TieredUpdateTimes>
+                <unsignedInt>100</unsignedInt>
+                <unsignedInt>3600</unsignedInt>
+                <unsignedInt>0</unsignedInt>
+            </TieredUpdateTimes>
         </Definition>
-        <!--HydrogenThrusters End-->
+        <!-- End Region HydrogenThrusters -->
 
-        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">    <!-- components*4 buildTime*1.5 power*4 force*4 -->
+        <!-- Region AtmosphericThrusters -->
+        <!-- components*2 buildTime*1.5 power*4 force*4 -->
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>LargeBlockLargeAtmosphericThrust2</SubtypeId>
             </Id>
             <DisplayName>大型空气动力推进器II</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\AtmosphericThrusterLargeLarge.dds</Icon>
-            <Description>轴流式涡轮喷气发动机</Description>
+            <Description>Description_AtmosphericThrust</Description>
             <CubeSize>Large</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
             <Size x="3" y="3" z="5"/>
@@ -799,13 +834,13 @@
             <ThrusterType>Atmospheric</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="400"/>
-                <Component Subtype="Construction" Count="160"/>
-                <Component Subtype="LargeTube" Count="200"/>
-                <Component Subtype="MetalGrid" Count="160"/>
-                <Component Subtype="Motor" Count="4400"/>
+                <Component Subtype="SteelPlate" Count="200"/>
                 <Component Subtype="Construction" Count="80"/>
-                <Component Subtype="SteelPlate" Count="520"/>
+                <Component Subtype="LargeTube" Count="100"/>
+                <Component Subtype="MetalGrid" Count="80"/>
+                <Component Subtype="Motor" Count="2200"/>
+                <Component Subtype="Construction" Count="40"/>
+                <Component Subtype="SteelPlate" Count="260"/>
             </Components>
             <CriticalComponent Subtype="Motor" Index="0"/>
             <MountPoints>
@@ -886,16 +921,20 @@
             <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <PCU>15</PCU>
+            <TieredUpdateTimes>
+                <unsignedInt>100</unsignedInt>
+                <unsignedInt>3600</unsignedInt>
+                <unsignedInt>0</unsignedInt>
+            </TieredUpdateTimes>
         </Definition>
-
-        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">    <!-- components*4 buildTime*1.5 power*4 force*4 -->
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>LargeBlockSmallAtmosphericThrust2</SubtypeId>
             </Id>
             <DisplayName>小型空气动力推进器II</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\AtmosphericThrusterSmall.dds</Icon>
-            <Description>轴流式涡轮喷气发动机</Description>
+            <Description>Description_AtmosphericThrust</Description>
             <CubeSize>Large</CubeSize>
             <GuiVisible>false</GuiVisible>
             <BlockTopology>TriangleMesh</BlockTopology>
@@ -905,13 +944,13 @@
             <ThrusterType>Atmospheric</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="60"/>
-                <Component Subtype="Construction" Count="120"/>
-                <Component Subtype="LargeTube" Count="32"/>
-                <Component Subtype="MetalGrid" Count="40"/>
-                <Component Subtype="Motor" Count="440"/>
-                <Component Subtype="Construction" Count="80"/>
-                <Component Subtype="SteelPlate" Count="80"/>
+                <Component Subtype="SteelPlate" Count="30"/>
+                <Component Subtype="Construction" Count="60"/>
+                <Component Subtype="LargeTube" Count="16"/>
+                <Component Subtype="MetalGrid" Count="20"/>
+                <Component Subtype="Motor" Count="220"/>
+                <Component Subtype="Construction" Count="40"/>
+                <Component Subtype="SteelPlate" Count="40"/>
             </Components>
             <CriticalComponent Subtype="Motor" Index="0"/>
             <MountPoints>
@@ -993,16 +1032,20 @@
             <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <PCU>15</PCU>
+            <TieredUpdateTimes>
+                <unsignedInt>100</unsignedInt>
+                <unsignedInt>3600</unsignedInt>
+                <unsignedInt>0</unsignedInt>
+            </TieredUpdateTimes>
         </Definition>
-
-        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">    <!-- components*4 buildTime*1.5 power*4 force*4 -->
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>SmallBlockLargeAtmosphericThrust2</SubtypeId>
             </Id>
             <DisplayName>大型空气动力推进器II</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\AtmosphericThrusterLargeLarge.dds</Icon>
-            <Description>轴流式涡轮喷气发动机</Description>
+            <Description>Description_AtmosphericThrust</Description>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
             <Size x="3" y="3" z="5"/>
@@ -1011,13 +1054,13 @@
             <ThrusterType>Atmospheric</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="40"/>
-                <Component Subtype="Construction" Count="80"/>
-                <Component Subtype="LargeTube" Count="16"/>
-                <Component Subtype="MetalGrid" Count="32"/>
-                <Component Subtype="Motor" Count="360"/>
+                <Component Subtype="SteelPlate" Count="20"/>
                 <Component Subtype="Construction" Count="40"/>
-                <Component Subtype="SteelPlate" Count="40"/>
+                <Component Subtype="LargeTube" Count="8"/>
+                <Component Subtype="MetalGrid" Count="16"/>
+                <Component Subtype="Motor" Count="180"/>
+                <Component Subtype="Construction" Count="20"/>
+                <Component Subtype="SteelPlate" Count="20"/>
             </Components>
             <CriticalComponent Subtype="Motor" Index="0"/>
             <MountPoints>
@@ -1099,16 +1142,20 @@
             <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <PCU>15</PCU>
+            <TieredUpdateTimes>
+                <unsignedInt>100</unsignedInt>
+                <unsignedInt>3600</unsignedInt>
+                <unsignedInt>0</unsignedInt>
+            </TieredUpdateTimes>
         </Definition>
-
-        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">    <!-- components*4 buildTime*1.5 power*4 force*4 -->
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>SmallBlockSmallAtmosphericThrust2</SubtypeId>
             </Id>
             <DisplayName>小型空气动力推进器II</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\AtmosphericThrusterSmall.dds</Icon>
-            <Description>轴流式涡轮喷气发动机</Description>
+            <Description>Description_AtmosphericThrust</Description>
             <CubeSize>Small</CubeSize>
             <GuiVisible>false</GuiVisible>
             <BlockTopology>TriangleMesh</BlockTopology>
@@ -1118,13 +1165,13 @@
             <ThrusterType>Atmospheric</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="8"/>
-                <Component Subtype="Construction" Count="80"/>
-                <Component Subtype="LargeTube" Count="4"/>
-                <Component Subtype="MetalGrid" Count="4"/>
-                <Component Subtype="Motor" Count="64"/>
-                <Component Subtype="Construction" Count="8"/>
                 <Component Subtype="SteelPlate" Count="4"/>
+                <Component Subtype="Construction" Count="40"/>
+                <Component Subtype="LargeTube" Count="2"/>
+                <Component Subtype="MetalGrid" Count="2"/>
+                <Component Subtype="Motor" Count="36"/>
+                <Component Subtype="Construction" Count="4"/>
+                <Component Subtype="SteelPlate" Count="2"/>
             </Components>
             <CriticalComponent Subtype="Motor" Index="0"/>
             <MountPoints>
@@ -1207,7 +1254,12 @@
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <PCU>15</PCU>
             <IsAirTight>false</IsAirTight>
+            <TieredUpdateTimes>
+                <unsignedInt>100</unsignedInt>
+                <unsignedInt>3600</unsignedInt>
+                <unsignedInt>0</unsignedInt>
+            </TieredUpdateTimes>
         </Definition>
-        <!-- End Region Thrust-->
+        <!-- End Region AtmosphericThrusters -->
     </CubeBlocks>
 </Definitions>

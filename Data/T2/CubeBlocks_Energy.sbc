@@ -1,14 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <CubeBlocks>
-        <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">  <!-- components*5 power*5 buildTime*2 -->
+        <!-- Region BatteryBlock-->
+        <!-- components*5 power*5 buildTime*2 -->
+        <!-- "电池" 的大方块版本 -->
+        <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
             <Id>
                 <TypeId>BatteryBlock</TypeId>
                 <SubtypeId>LargeBlockBatteryBlock2</SubtypeId>
             </Id>
             <DisplayName>电池II</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\Battery.dds</Icon>
-            <Description>大分子质子交换膜燃料电池</Description>
+            <Description>Description_Battery</Description>
             <CubeSize>Large</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
             <Size x="1" y="1" z="1"/>
@@ -62,37 +65,37 @@
             <MirroringZ>Y</MirroringZ>
             <MirroringY>Z</MirroringY>
         </Definition>
-
-        <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">  <!-- components*5 power*5 buildTime*2 -->
+        <!-- "电池" 的小方块版本 -->
+        <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
             <Id>
                 <TypeId>BatteryBlock</TypeId>
                 <SubtypeId>SmallBlockBatteryBlock2</SubtypeId>
             </Id>
             <DisplayName>电池II</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\Battery.dds</Icon>
-            <Description>大分子质子交换膜燃料电池</Description>
+            <Description>Description_Battery</Description>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="3" y="2" z="3" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="3" y="2" z="3"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\BatterySmall.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="25" />
-                <Component Subtype="Construction" Count="10" />
+                <Component Subtype="SteelPlate" Count="25"/>
+                <Component Subtype="Construction" Count="10"/>
                 <Component Subtype="PowerCell" Count="100">
                     <DeconstructId>
                         <TypeId>Ore</TypeId>
                         <SubtypeId>Scrap</SubtypeId>
                     </DeconstructId>
                 </Component>
-                <Component Subtype="Computer" Count="10" />
-                <Component Subtype="Construction" Count="15" />
-                <Component Subtype="SteelPlate" Count="100" />
+                <Component Subtype="Computer" Count="10"/>
+                <Component Subtype="Construction" Count="15"/>
+                <Component Subtype="SteelPlate" Count="100"/>
             </Components>
-            <CriticalComponent Subtype="PowerCell" Index="0" />
+            <CriticalComponent Subtype="PowerCell" Index="0"/>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\BatterySmallConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\BatterySmallConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\BatterySmallConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\BatterySmallConstruction_2.mwm"/>
             </BuildProgressModels>
             <BlockPairName>BatteryBlock2</BlockPairName>
             <EdgeType>Light</EdgeType>
@@ -122,38 +125,38 @@
             <MirroringZ>Y</MirroringZ>
             <MirroringY>Z</MirroringY>
         </Definition>
-
-        <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">  <!-- components*5 power*5 buildTime*2 -->
+        <!-- "小电池" 的小方块版本(没有大方块版本) -->
+        <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
             <Id>
                 <TypeId>BatteryBlock</TypeId>
                 <SubtypeId>SmallBlockSmallBatteryBlock2</SubtypeId>
             </Id>
             <DisplayName>小电池II</DisplayName>
             <Icon>Textures/GUI/Icons/Cubes/Battery1x1.dds</Icon>
-            <Description>大分子质子交换膜燃料电池</Description>
+            <Description>Description_Battery</Description>
             <CubeSize>Small</CubeSize>
             <GuiVisible>false</GuiVisible>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="1" y="1" z="1" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="1" y="1" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\BatterySmall1x1.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="10" />
-                <Component Subtype="Construction" Count="5" />
+                <Component Subtype="SteelPlate" Count="10"/>
+                <Component Subtype="Construction" Count="5"/>
                 <Component Subtype="PowerCell" Count="10">
                     <DeconstructId>
                         <TypeId>Ore</TypeId>
                         <SubtypeId>Scrap</SubtypeId>
                     </DeconstructId>
                 </Component>
-                <Component Subtype="Computer" Count="10" />
-                <Component Subtype="Construction" Count="5" />
-                <Component Subtype="SteelPlate" Count="10" />
+                <Component Subtype="Computer" Count="10"/>
+                <Component Subtype="Construction" Count="5"/>
+                <Component Subtype="SteelPlate" Count="10"/>
             </Components>
-            <CriticalComponent Subtype="Computer" Index="0" />
+            <CriticalComponent Subtype="Computer" Index="0"/>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\BatterySmall1x1_Construction_1.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\BatterySmall1x1_Construction_2.mwm" />
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\BatterySmall1x1_Construction_1.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\BatterySmall1x1_Construction_2.mwm"/>
             </BuildProgressModels>
             <BlockPairName>Battery1x1Block2</BlockPairName>
             <EdgeType>Light</EdgeType>
@@ -181,15 +184,291 @@
             <IsAirTight>true</IsAirTight>
             <PCU>15</PCU>
         </Definition>
-        
-        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">   <!-- components*3(major*5) power*5 buildTime*2 -->
+        <!-- End Region BatteryBlock-->
+
+        <!-- Region Reactor -->
+        <!-- components*3(Reactor*5) power*5 inventoryFillFactor*5 fuelPullAmount*5 buildTime*2 -->
+        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+            <Id>
+                <TypeId>Reactor</TypeId>
+                <SubtypeId>SmallBlockSmallGenerator2</SubtypeId>
+            </Id>
+            <DisplayName>小型反应堆II</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\nuclear_reactor.dds</Icon>
+            <Description>Description_Reactor</Description>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Small\GeneratorSmall.mwm</Model>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+                <Component Subtype="SteelPlate" Count="3"/>
+                <Component Subtype="Construction" Count="30"/>
+                <Component Subtype="MetalGrid" Count="6"/>
+                <Component Subtype="LargeTube" Count="3"/>
+                <Component Subtype="Reactor" Count="15"/>
+                <Component Subtype="Motor" Count="3"/>
+                <Component Subtype="Computer" Count="30"/>
+                <Component Subtype="SteelPlate" Count="6"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1"/>
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1"/>
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true"/>
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1"/>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\GeneratorSmallConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\GeneratorSmallConstruction_2.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>SmallReactor2</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>40</BuildTimeSeconds>
+
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <MaxPowerOutput>2.5</MaxPowerOutput>
+
+            <InventorySize>
+                <X>0.5</X>
+                <Y>0.5</Y>
+                <Z>0.5</Z>
+            </InventorySize>
+
+
+            <!-- 
+                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
+                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
+                Warning: Changing these values will affect performance.
+            -->
+            <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
+            <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
+
+            <!-- 
+                This is how much of fuel is pulled from conveyor system in one tick.
+                It's in minutes, means that it will pull X minutes of fuel in one tick.
+                Warning: Changing this value will affect performance.
+            -->
+            <FuelPullAmountFromConveyorInMinutes>50.0</FuelPullAmountFromConveyorInMinutes>
+
+            <FuelInfos>
+                <FuelInfo>
+                    <Id>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>Uranium</SubtypeId>
+                    </Id>
+                </FuelInfo>
+            </FuelInfos>
+
+            <PrimarySound>ShipSmNuclearSm</PrimarySound>
+            <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>
+            <DamagedSound>ParticleReactor</DamagedSound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+            <IsAirTight>false</IsAirTight>
+            <TieredUpdateTimes>
+                <unsignedInt>900</unsignedInt>
+                <unsignedInt>1800</unsignedInt>
+                <unsignedInt>3600</unsignedInt>
+            </TieredUpdateTimes>
+        </Definition>
+        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+            <Id>
+                <TypeId>Reactor</TypeId>
+                <SubtypeId>SmallBlockLargeGenerator2</SubtypeId>
+            </Id>
+            <DisplayName>大型反应堆II</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\nuclear_reactor_large.dds</Icon>
+            <Description>Description_Reactor</Description>
+            <CubeSize>Small</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Small\GeneratorLarge.mwm</Model>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+                <Component Subtype="SteelPlate" Count="120"/>
+                <Component Subtype="Construction" Count="27"/>
+                <Component Subtype="MetalGrid" Count="27"/>
+                <Component Subtype="LargeTube" Count="9"/>
+                <Component Subtype="Reactor" Count="475"/>
+                <Component Subtype="Motor" Count="15"/>
+                <Component Subtype="Computer" Count="75"/>
+                <Component Subtype="SteelPlate" Count="60"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Right" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Left" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Top" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Bottom" StartX="1" StartY="1" EndX="2" EndY="2" Default="true"/>
+                <MountPoint Side="Front" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Back" StartX="1" StartY="1" EndX="2" EndY="2"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.16" File="Models\Cubes\Small\GeneratorLargeConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\GeneratorLargeConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\GeneratorLargeConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\GeneratorLargeConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="0.83" File="Models\Cubes\Small\GeneratorLargeConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\GeneratorLargeConstruction_2.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>LargeReactor2</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <BuildTimeSeconds>60</BuildTimeSeconds>
+            <EdgeType>Light</EdgeType>
+
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <MaxPowerOutput>73.75</MaxPowerOutput>
+
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+
+            <!-- 
+                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
+                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
+                Warning: Changing these values will affect performance.
+            -->
+            <InventoryFillFactorMin>0.0025</InventoryFillFactorMin>
+            <InventoryFillFactorMax>0.005</InventoryFillFactorMax>
+
+            <!-- 
+                This is how much of fuel is pulled from conveyor system in one tick.
+                It's in minutes, means that it will pull X minutes of fuel in one tick.
+                Warning: Changing this value will affect performance.
+            -->
+            <FuelPullAmountFromConveyorInMinutes>50.0</FuelPullAmountFromConveyorInMinutes>
+
+            <FuelInfos>
+                <FuelInfo>
+                    <Id>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>Uranium</SubtypeId>
+                    </Id>
+                </FuelInfo>
+            </FuelInfos>
+            <PrimarySound>ShipSmNuclearLrg</PrimarySound>
+            <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>
+            <DamagedSound>ParticleReactor</DamagedSound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+            <TieredUpdateTimes>
+                <unsignedInt>900</unsignedInt>
+                <unsignedInt>1800</unsignedInt>
+                <unsignedInt>3600</unsignedInt>
+            </TieredUpdateTimes>
+        </Definition>
+        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+            <Id>
+                <TypeId>Reactor</TypeId>
+                <SubtypeId>LargeBlockSmallGenerator2</SubtypeId>
+            </Id>
+            <DisplayName>小型反应堆II</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\nuclear_reactor.dds</Icon>
+            <Description>Description_Reactor</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Large\GeneratorSmall.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="150"/>
+                <Component Subtype="Construction" Count="120"/>
+                <Component Subtype="MetalGrid" Count="12"/>
+                <Component Subtype="LargeTube" Count="24"/>
+                <Component Subtype="Reactor" Count="500"/>
+                <Component Subtype="Motor" Count="18"/>
+                <Component Subtype="Computer" Count="75"/>
+                <Component Subtype="SteelPlate" Count="90"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Top" StartX="0.15" StartY="0.15" EndX="0.85" EndY="0.85"/>
+                <MountPoint Side="Back" StartX="0.15" StartY="0.15" EndX="0.85" EndY="0.85"/>
+                <MountPoint Side="Right" StartX="0.3" StartY="0.3" EndX="0.7" EndY="0.7"/>
+                <MountPoint Side="Left" StartX="0.3" StartY="0.3" EndX="0.7" EndY="0.7"/>
+                <MountPoint Side="Bottom" StartX="0.3" StartY="0.3" EndX="0.7" EndY="0.7" Default="true"/>
+                <MountPoint Side="Front" StartX="0.3" StartY="0.3" EndX="0.7" EndY="0.7"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\GeneratorSmallConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\GeneratorSmallConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\GeneratorSmallConstruction_3.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>SmallReactor2</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>80</BuildTimeSeconds>
+
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <MaxPowerOutput>75</MaxPowerOutput>
+
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+
+            <!-- 
+                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
+                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
+                Warning: Changing these values will affect performance.
+            -->
+            <InventoryFillFactorMin>0.0025</InventoryFillFactorMin>
+            <InventoryFillFactorMax>0.005</InventoryFillFactorMax>
+
+            <!-- 
+                This is how much of fuel is pulled from conveyor system in one tick.
+                It's in minutes, means that it will pull X minutes of fuel in one tick.
+                Warning: Changing this value will affect performance.
+            -->
+            <FuelPullAmountFromConveyorInMinutes>50.0</FuelPullAmountFromConveyorInMinutes>
+
+            <FuelInfos>
+                <FuelInfo>
+                    <Id>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>Uranium</SubtypeId>
+                    </Id>
+                </FuelInfo>
+            </FuelInfos>
+            <PrimarySound>ShipLrgNuclearSm</PrimarySound>
+            <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>
+            <DamagedSound>ParticleReactor</DamagedSound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+            <IsAirTight>false</IsAirTight>
+            <TieredUpdateTimes>
+                <unsignedInt>900</unsignedInt>
+                <unsignedInt>1800</unsignedInt>
+                <unsignedInt>3600</unsignedInt>
+            </TieredUpdateTimes>
+        </Definition>
+        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
             <Id>
                 <TypeId>Reactor</TypeId>
                 <SubtypeId>LargeBlockLargeGenerator2</SubtypeId>
             </Id>
             <DisplayName>大型反应堆II</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\nuclear_reactor_large.dds</Icon>
-            <Description>外源中子驱动次临界反应堆</Description>
+            <Description>Description_Reactor</Description>
             <CubeSize>Large</CubeSize>
             <GuiVisible>false</GuiVisible>
             <BlockTopology>TriangleMesh</BlockTopology>
@@ -235,6 +514,22 @@
                 <Y>2</Y>
                 <Z>2</Z>
             </InventorySize>
+
+            <!-- 
+                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
+                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
+                Warning: Changing these values will affect performance.
+            -->
+            <InventoryFillFactorMin>0.005</InventoryFillFactorMin>
+            <InventoryFillFactorMax>0.01</InventoryFillFactorMax>
+
+            <!-- 
+                This is how much of fuel is pulled from conveyor system in one tick.
+                It's in minutes, means that it will pull X minutes of fuel in one tick.
+                Warning: Changing this value will affect performance.
+            -->
+            <FuelPullAmountFromConveyorInMinutes>50.0</FuelPullAmountFromConveyorInMinutes>
+
             <FuelInfos>
                 <FuelInfo>
                     <Id>
@@ -252,156 +547,17 @@
             <PCU>25</PCU>
             <IsAirTight>false</IsAirTight>
         </Definition>
+        <!-- End Region Reactor-->
 
-        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">   <!-- components*5(major*5) power*5 buildTime*2 -->
-            <Id>
-                <TypeId>Reactor</TypeId>
-                <SubtypeId>LargeBlockSmallGenerator2</SubtypeId>
-            </Id>
-            <DisplayName>小型反应堆II</DisplayName>
-            <Icon>Textures\GUI\Icons\Cubes\nuclear_reactor.dds</Icon>
-            <Description>外源中子驱动次临界反应堆</Description>
-            <CubeSize>Large</CubeSize>
-            <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="1" y="1" z="1" />
-            <ModelOffset x="0" y="0" z="0" />
-            <Model>Models\Cubes\Large\GeneratorSmall.mwm</Model>
-            <Components>
-                <Component Subtype="SteelPlate" Count="250" />
-                <Component Subtype="Construction" Count="200" />
-                <Component Subtype="MetalGrid" Count="20" />
-                <Component Subtype="LargeTube" Count="40" />
-                <Component Subtype="Reactor" Count="500" />
-                <Component Subtype="Motor" Count="30" />
-                <Component Subtype="Computer" Count="125" />
-                <Component Subtype="SteelPlate" Count="150" />
-            </Components>
-            <CriticalComponent Subtype="Computer" Index="0" />
-            <MountPoints>
-                <MountPoint Side="Top" StartX="0.15" StartY="0.15" EndX="0.85" EndY="0.85" />
-                <MountPoint Side="Back" StartX="0.15" StartY="0.15" EndX="0.85" EndY="0.85" />
-                <MountPoint Side="Right" StartX="0.3" StartY="0.3" EndX="0.7" EndY="0.7" />
-                <MountPoint Side="Left" StartX="0.3" StartY="0.3" EndX="0.7" EndY="0.7" />
-                <MountPoint Side="Bottom" StartX="0.3" StartY="0.3" EndX="0.7" EndY="0.7" Default="true" />
-                <MountPoint Side="Front" StartX="0.3" StartY="0.3" EndX="0.7" EndY="0.7" />
-            </MountPoints>
-            <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\GeneratorSmallConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\GeneratorSmallConstruction_2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\GeneratorSmallConstruction_3.mwm" />
-            </BuildProgressModels>
-            <BlockPairName>SmallReactor2</BlockPairName>
-            <MirroringY>Z</MirroringY>
-            <MirroringZ>Y</MirroringZ>
-            <EdgeType>Light</EdgeType>
-            <BuildTimeSeconds>80</BuildTimeSeconds>
-
-            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
-            <MaxPowerOutput>75</MaxPowerOutput>
-
-            <InventorySize>
-                <X>1</X>
-                <Y>1</Y>
-                <Z>1</Z>
-            </InventorySize>
-            <FuelInfos>
-                <FuelInfo>
-                    <Id>
-                        <TypeId>Ingot</TypeId>
-                        <SubtypeId>Uranium</SubtypeId>
-                    </Id>
-                </FuelInfo>
-            </FuelInfos>
-            <PrimarySound>ShipLrgNuclearSm</PrimarySound>
-            <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>
-            <DamagedSound>ParticleReactor</DamagedSound>
-            <EmissiveColorPreset>Default</EmissiveColorPreset>
-            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
-            <DestroySound>WepSmallWarheadExpl</DestroySound>
-            <PCU>25</PCU>
-            <IsAirTight>false</IsAirTight>
-        </Definition>
-
-        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">   <!-- components*5(major*5) power*5 buildTime*2 -->
-            <Id>
-                <TypeId>Reactor</TypeId>
-                <SubtypeId>SmallBlockLargeGenerator2</SubtypeId>
-            </Id>
-            <DisplayName>大型反应堆II</DisplayName>
-            <Icon>Textures\GUI\Icons\Cubes\nuclear_reactor_large.dds</Icon>
-            <Description>外源中子驱动次临界反应堆</Description>
-            <CubeSize>Small</CubeSize>
-            <GuiVisible>false</GuiVisible>
-            <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="3" y="3" z="3" />
-            <ModelOffset x="0" y="0" z="0" />
-            <Model>Models\Cubes\Small\GeneratorLarge.mwm</Model>
-            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
-            <Components>
-                <Component Subtype="SteelPlate" Count="200" />
-                <Component Subtype="Construction" Count="45" />
-                <Component Subtype="MetalGrid" Count="45" />
-                <Component Subtype="LargeTube" Count="15" />
-                <Component Subtype="Reactor" Count="475" />
-                <Component Subtype="Motor" Count="25" />
-                <Component Subtype="Computer" Count="125" />
-                <Component Subtype="SteelPlate" Count="100" />
-            </Components>
-            <CriticalComponent Subtype="Computer" Index="0" />
-            <MountPoints>
-                <MountPoint Side="Right" StartX="1" StartY="1" EndX="2" EndY="2" />
-                <MountPoint Side="Left" StartX="1" StartY="1" EndX="2" EndY="2" />
-                <MountPoint Side="Top" StartX="1" StartY="1" EndX="2" EndY="2" />
-                <MountPoint Side="Bottom" StartX="1" StartY="1" EndX="2" EndY="2" Default="true" />
-                <MountPoint Side="Front" StartX="1" StartY="1" EndX="2" EndY="2" />
-                <MountPoint Side="Back" StartX="1" StartY="1" EndX="2" EndY="2" />
-            </MountPoints>
-            <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.16" File="Models\Cubes\Small\GeneratorLargeConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\GeneratorLargeConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\GeneratorLargeConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\GeneratorLargeConstruction_2.mwm" />
-                <Model BuildPercentUpperBound="0.83" File="Models\Cubes\Small\GeneratorLargeConstruction_2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\GeneratorLargeConstruction_2.mwm" />
-            </BuildProgressModels>
-            <BlockPairName>LargeReactor2</BlockPairName>
-            <MirroringY>Z</MirroringY>
-            <MirroringZ>Y</MirroringZ>
-            <BuildTimeSeconds>60</BuildTimeSeconds>
-            <EdgeType>Light</EdgeType>
-
-            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
-            <MaxPowerOutput>73.75</MaxPowerOutput>
-
-            <InventorySize>
-                <X>1</X>
-                <Y>1</Y>
-                <Z>1</Z>
-            </InventorySize>
-            <FuelInfos>
-                <FuelInfo>
-                    <Id>
-                        <TypeId>Ingot</TypeId>
-                        <SubtypeId>Uranium</SubtypeId>
-                    </Id>
-                </FuelInfo>
-            </FuelInfos>
-            <PrimarySound>ShipSmNuclearLrg</PrimarySound>
-            <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>
-            <DamagedSound>ParticleReactor</DamagedSound>
-            <EmissiveColorPreset>Default</EmissiveColorPreset>
-            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
-            <DestroySound>WepSmallWarheadExpl</DestroySound>
-            <PCU>25</PCU>
-        </Definition>
-        
-        <Definition xsi:type="MyObjectBuilder_WindTurbineDefinition">   <!-- components*5 power*5 buildTime*2 -->
+        <!-- Region WindTurbine -->
+        <!-- components*5 power*5 buildTime*2 -->
+        <Definition xsi:type="MyObjectBuilder_WindTurbineDefinition">
             <Id>
                 <TypeId>WindTurbine</TypeId>
                 <SubtypeId>LargeBlockWindTurbine2</SubtypeId>
             </Id>
             <DisplayName>风轮机II</DisplayName>
-            <Description>复合材料垂直轴风力发电机</Description>
+            <Description>Description_WindTurbine</Description>
             <Icon>Textures\GUI\Icons\Cubes\WindTurbine.dds</Icon>
             <CubeSize>Large</CubeSize>
             <GuiVisible>false</GuiVisible>
@@ -465,15 +621,18 @@
             <TurbineRotationSpeed>7</TurbineRotationSpeed>
             <PCU>55</PCU>
         </Definition>
+        <!-- End Region WindTurbine-->
 
-        <Definition xsi:type="MyObjectBuilder_SolarPanelDefinition">    <!-- components*5 power*5 buildTime*2 -->
+        <!-- Region SolarPanel -->
+        <!-- components*5 power*5 buildTime*2 -->
+        <Definition xsi:type="MyObjectBuilder_SolarPanelDefinition">
             <Id>
                 <TypeId>SolarPanel</TypeId>
                 <SubtypeId>LargeBlockSolarPanel2</SubtypeId>
             </Id>
             <DisplayName>太阳能板II</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\SolarPanel.dds</Icon>
-            <Description>电池栅线多晶硅太阳能电池</Description>
+            <Description>Description_SolarPanel</Description>
             <CubeSize>Large</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
             <Size x="4" y="2" z="1"/>
@@ -529,44 +688,43 @@
             <PCU>55</PCU>
             <IsAirTight>false</IsAirTight>
         </Definition>
-
-        <Definition xsi:type="MyObjectBuilder_SolarPanelDefinition">    <!-- components*5 power*5 buildTime*2 -->
+        <Definition xsi:type="MyObjectBuilder_SolarPanelDefinition">
             <Id>
                 <TypeId>SolarPanel</TypeId>
                 <SubtypeId>SmallBlockSolarPanel2</SubtypeId>
             </Id>
             <DisplayName>太阳能板II</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\SolarPanel.dds</Icon>
-            <Description>电池栅线多晶硅太阳能电池</Description>
+            <Description>Description_SolarPanel</Description>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="10" y="5" z="1" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="10" y="5" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\SolarPanel.mwm</Model>
-            <Center x="0" y="0" z="0" />
+            <Center x="0" y="0" z="0"/>
             <Components>
-                <Component Subtype="SteelPlate" Count="10" />
-                <Component Subtype="Construction" Count="5" />
-                <Component Subtype="Girder" Count="20" />
-                <Component Subtype="Computer" Count="5" />
-                <Component Subtype="SolarCell" Count="40" />
-                <Component Subtype="Construction" Count="5" />
-                <Component Subtype="BulletproofGlass" Count="5" />
+                <Component Subtype="SteelPlate" Count="10"/>
+                <Component Subtype="Construction" Count="5"/>
+                <Component Subtype="Girder" Count="20"/>
+                <Component Subtype="Computer" Count="5"/>
+                <Component Subtype="SolarCell" Count="40"/>
+                <Component Subtype="Construction" Count="5"/>
+                <Component Subtype="BulletproofGlass" Count="5"/>
             </Components>
-            <CriticalComponent Subtype="SolarCell" Index="0" />
+            <CriticalComponent Subtype="SolarCell" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Right" StartX="0.9" StartY="0" EndX="1" EndY="5" />
-                <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.1" EndY="5" Default="true" />
-                <MountPoint Side="Top" StartX="9.8" StartY="0.9" EndX="10" EndY="1" />
-                <MountPoint Side="Top" StartX="0" StartY="0.9" EndX="0.2" EndY="1" />
-                <MountPoint Side="Bottom" StartX="9.8" StartY="0" EndX="10" EndY="0.1" />
-                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="0.2" EndY="0.1" />
-                <MountPoint Side="Front" StartX="0" StartY="0" EndX="0.2" EndY="5" />
-                <MountPoint Side="Front" StartX="9.8" StartY="0" EndX="10" EndY="5" />
+                <MountPoint Side="Right" StartX="0.9" StartY="0" EndX="1" EndY="5"/>
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.1" EndY="5" Default="true"/>
+                <MountPoint Side="Top" StartX="9.8" StartY="0.9" EndX="10" EndY="1"/>
+                <MountPoint Side="Top" StartX="0" StartY="0.9" EndX="0.2" EndY="1"/>
+                <MountPoint Side="Bottom" StartX="9.8" StartY="0" EndX="10" EndY="0.1"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="0.2" EndY="0.1"/>
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="0.2" EndY="5"/>
+                <MountPoint Side="Front" StartX="9.8" StartY="0" EndX="10" EndY="5"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Small\SolarPanelConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Small\SolarPanelConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Small\SolarPanelConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Small\SolarPanelConstruction_2.mwm"/>
             </BuildProgressModels>
             <BlockPairName>SolarPanel2</BlockPairName>
             <EdgeType>Light</EdgeType>
@@ -593,6 +751,6 @@
             <PCU>55</PCU>
             <IsAirTight>false</IsAirTight>
         </Definition>
-        
+        <!-- End Region SolarPanel -->
     </CubeBlocks>
 </Definitions>

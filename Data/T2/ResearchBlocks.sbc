@@ -20,14 +20,14 @@
                 <GroupSubtype>15</GroupSubtype> <!-- LargeOxygenGenerator -->
             </UnlockedByGroups>
         </ResearchBlock>
-        
+
         <ResearchBlock xsi:type="ResearchBlock">
             <Id Type="MyObjectBuilder_OxygenFarm" Subtype="LargeBlockOxygenFarm2"/>
             <UnlockedByGroups>
                 <GroupSubtype>OxygenGenerator2Group</GroupSubtype>
             </UnlockedByGroups>
         </ResearchBlock>
-        
+
         <ResearchBlock xsi:type="ResearchBlock">
             <Id Type="MyObjectBuilder_BatteryBlock" Subtype="LargeBlockBatteryBlock2"/>
             <UnlockedByGroups>
@@ -61,6 +61,12 @@
         </ResearchBlock>
         <ResearchBlock xsi:type="ResearchBlock">
             <Id Type="MyObjectBuilder_Reactor" Subtype="SmallBlockLargeGenerator2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>Refinery2Group</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_Reactor" Subtype="SmallBlockSmallGenerator2"/>
             <UnlockedByGroups>
                 <GroupSubtype>Refinery2Group</GroupSubtype>
             </UnlockedByGroups>
@@ -184,7 +190,13 @@
                 <GroupSubtype>ThrustGroup</GroupSubtype>
             </UnlockedByGroups>
         </ResearchBlock>
-        
+
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockLargeContainer2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>24</GroupSubtype> <!-- LargeBlockLargeContainer -->
+            </UnlockedByGroups>
+        </ResearchBlock>
         <ResearchBlock xsi:type="ResearchBlock">
             <Id Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockLargeContainer2"/>
             <UnlockedByGroups>
@@ -200,6 +212,12 @@
         </ResearchBlock>
         <ResearchBlock xsi:type="ResearchBlock">
             <Id Type="MyObjectBuilder_OxygenTank" Subtype="SmallHydrogenTank2"/>
+            <UnlockedByGroups>
+                <GroupSubtype>OxygenGenerator2Group</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="MyObjectBuilder_OxygenTank" Subtype="OxygenTankSmall2"/>
             <UnlockedByGroups>
                 <GroupSubtype>OxygenGenerator2Group</GroupSubtype>
             </UnlockedByGroups>
