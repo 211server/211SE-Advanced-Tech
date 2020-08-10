@@ -2,7 +2,7 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <CubeBlocks>
         <!-- Region OxygenTank -->
-        <!-- components*5 buildTime*2 Capacity*5  -->
+        <!-- components*2 buildTime*2 Capacity*5  -->
         <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
             <Id>
                 <TypeId>OxygenTank</TypeId>
@@ -17,12 +17,12 @@
             <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\OxygenStorage.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="50"/>
-                <Component Subtype="LargeTube" Count="40"/>
-                <Component Subtype="SmallTube" Count="50"/>
-                <Component Subtype="Computer" Count="40"/>
-                <Component Subtype="Construction" Count="50"/>
-                <Component Subtype="SteelPlate" Count="30"/>
+                <Component Subtype="SteelPlate" Count="20"/>
+                <Component Subtype="LargeTube" Count="16"/>
+                <Component Subtype="SmallTube" Count="20"/>
+                <Component Subtype="Computer" Count="16"/>
+                <Component Subtype="Construction" Count="20"/>
+                <Component Subtype="SteelPlate" Count="12"/>
             </Components>
             <CriticalComponent Subtype="Computer" Index="0"/>
             <MountPoints>
@@ -91,12 +91,12 @@
             <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Large\OxygenStorage.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="300"/>
-                <Component Subtype="LargeTube" Count="200"/>
-                <Component Subtype="SmallTube" Count="300"/>
-                <Component Subtype="Computer" Count="40"/>
-                <Component Subtype="Construction" Count="200"/>
-                <Component Subtype="SteelPlate" Count="100"/>
+                <Component Subtype="SteelPlate" Count="120"/>
+                <Component Subtype="LargeTube" Count="80"/>
+                <Component Subtype="SmallTube" Count="120"/>
+                <Component Subtype="Computer" Count="16"/>
+                <Component Subtype="Construction" Count="80"/>
+                <Component Subtype="SteelPlate" Count="40"/>
             </Components>
             <CriticalComponent Subtype="Computer" Index="0"/>
             <MountPoints>
@@ -161,7 +161,7 @@
         <!-- End Region OxygenTank -->
 
         <!-- Region HydrogenTank -->
-        <!-- components*5 buildTime*2 Capacity*5  -->
+        <!-- components*2 buildTime*2 Capacity*5  -->
         <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
             <Id>
                 <TypeId>OxygenTank</TypeId>
@@ -177,12 +177,12 @@
             <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Large\HydrogenTank.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="800"/>
-                <Component Subtype="LargeTube" Count="400"/>
-                <Component Subtype="SmallTube" Count="300"/>
-                <Component Subtype="Computer" Count="40"/>
-                <Component Subtype="Construction" Count="200"/>
-                <Component Subtype="SteelPlate" Count="600"/>
+                <Component Subtype="SteelPlate" Count="320"/>
+                <Component Subtype="LargeTube" Count="160"/>
+                <Component Subtype="SmallTube" Count="120"/>
+                <Component Subtype="Computer" Count="16"/>
+                <Component Subtype="Construction" Count="80"/>
+                <Component Subtype="SteelPlate" Count="240"/>
             </Components>
             <CriticalComponent Subtype="Computer" Index="0"/>
             <MountPoints>
@@ -247,12 +247,12 @@
             <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\HydrogenTank.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="300"/>
-                <Component Subtype="LargeTube" Count="200"/>
-                <Component Subtype="SmallTube" Count="300"/>
-                <Component Subtype="Computer" Count="40"/>
-                <Component Subtype="Construction" Count="200"/>
-                <Component Subtype="SteelPlate" Count="100"/>
+                <Component Subtype="SteelPlate" Count="120"/>
+                <Component Subtype="LargeTube" Count="80"/>
+                <Component Subtype="SmallTube" Count="120"/>
+                <Component Subtype="Computer" Count="16"/>
+                <Component Subtype="Construction" Count="80"/>
+                <Component Subtype="SteelPlate" Count="40"/>
             </Components>
             <CriticalComponent Subtype="Computer" Index="0"/>
             <MountPoints>
