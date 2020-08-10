@@ -72,6 +72,7 @@
             <IsShipCategory>true</IsShipCategory>
             <IsBlockCategory>true</IsBlockCategory>
             <ItemIds>
+                <string>Reactor/SmallBlockLargeGenerator3</string>
                 <string>Reactor/LargeBlockLargeGenerator3</string>
                 <!-- Cannons -->
                 <string>LargeGatlingTurret/LargeVulcan</string>

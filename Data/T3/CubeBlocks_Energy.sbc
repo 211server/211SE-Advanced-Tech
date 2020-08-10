@@ -1,76 +1,193 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <!--    <CubeBlocks>-->
-    <!--        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">   &lt;!&ndash; TODO &ndash;&gt;-->
-    <!--            <Id>-->
-    <!--                <TypeId>Reactor</TypeId>-->
-    <!--                <SubtypeId>LargeBlockLargeGenerator3</SubtypeId>-->
-    <!--            </Id>-->
-    <!--            <DisplayName>大型反应堆III</DisplayName>-->
-    <!--            <Icon>Textures\GUI\Icons\Cubes\nuclear_reactor_large.dds</Icon>-->
-    <!--            <Description>轻元素聚变反应堆</Description>-->
-    <!--            <CubeSize>Large</CubeSize>-->
-    <!--            <GuiVisible>false</GuiVisible>-->
-    <!--            <BlockTopology>TriangleMesh</BlockTopology>-->
-    <!--            <Size x="3" y="3" z="3"/>-->
-    <!--            <ModelOffset x="0" y="0" z="0"/>-->
-    <!--            <Model>Models\Cubes\Large\GeneratorLarge.mwm</Model>-->
-    <!--            <Components>-->
-    <!--                <Component Subtype="SteelPlate" Count="8000"/>-->
-    <!--                <Component Subtype="Construction" Count="700"/>-->
-    <!--                <Component Subtype="MetalGrid" Count="400"/>-->
-    <!--                <Component Subtype="LargeTube" Count="400"/>-->
-    <!--                <Component Subtype="Superconductor" Count="1000"/>-->
-    <!--                <Component Subtype="Reactor" Count="20000"/>-->
-    <!--                <Component Subtype="Motor" Count="200"/>-->
-    <!--                <Component Subtype="Computer" Count="750"/>-->
-    <!--                <Component Subtype="SteelPlate" Count="2000"/>-->
-    <!--            </Components>-->
-    <!--            <CriticalComponent Subtype="Computer" Index="0"/>-->
-    <!--            <MountPoints>-->
-    <!--                <MountPoint Side="Right" StartX="1" StartY="1" EndX="2" EndY="2"/>-->
-    <!--                <MountPoint Side="Left" StartX="1" StartY="1" EndX="2" EndY="2"/>-->
-    <!--                <MountPoint Side="Top" StartX="1" StartY="1" EndX="2" EndY="2"/>-->
-    <!--                <MountPoint Side="Bottom" StartX="1" StartY="1" EndX="2" EndY="2" Default="true"/>-->
-    <!--                <MountPoint Side="Front" StartX="1" StartY="1" EndX="2" EndY="2"/>-->
-    <!--                <MountPoint Side="Back" StartX="1" StartY="1" EndX="2" EndY="2"/>-->
-    <!--            </MountPoints>-->
-    <!--            <BuildProgressModels>-->
-    <!--                <Model BuildPercentUpperBound="0.16" File="Models\Cubes\Large\GeneratorLargeConstruction_1.mwm"/>-->
-    <!--                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\GeneratorLargeConstruction_2.mwm"/>-->
-    <!--                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Large\GeneratorLargeConstruction_3.mwm"/>-->
-    <!--                <Model BuildPercentUpperBound="0.83" File="Models\Cubes\Large\GeneratorLargeConstruction_4.mwm"/>-->
-    <!--                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\GeneratorLargeConstruction_5.mwm"/>-->
-    <!--            </BuildProgressModels>-->
-    <!--            <BlockPairName>LargeReactor3</BlockPairName>-->
-    <!--            <MirroringY>Z</MirroringY>-->
-    <!--            <MirroringZ>Y</MirroringZ>-->
-    <!--            <EdgeType>Light</EdgeType>-->
-    <!--            <BuildTimeSeconds>200</BuildTimeSeconds>-->
-    <!--            <ResourceSourceGroup>Reactors</ResourceSourceGroup>-->
-    <!--            <MaxPowerOutput>1500</MaxPowerOutput>-->
-    <!--            <InventorySize>-->
-    <!--                <X>2</X>-->
-    <!--                <Y>2</Y>-->
-    <!--                <Z>2</Z>-->
-    <!--            </InventorySize>-->
-    <!--            <FuelInfos>-->
-    <!--                <FuelInfo>-->
-    <!--                    <Id>-->
-    <!--                        <TypeId>Ingot</TypeId>-->
-    <!--                        <SubtypeId>Helium</SubtypeId>-->
-    <!--                    </Id>-->
-    <!--                    <Ratio>0.1</Ratio>-->
-    <!--                </FuelInfo>-->
-    <!--            </FuelInfos>-->
-    <!--            <PrimarySound>ShipLrgNuclearLrg</PrimarySound>-->
-    <!--            <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>-->
-    <!--            <DamagedSound>ParticleReactor</DamagedSound>-->
-    <!--            <EmissiveColorPreset>Default</EmissiveColorPreset>-->
-    <!--            <DestroyEffect>Explosion_Warhead_30</DestroyEffect>-->
-    <!--            <DestroySound>WepLrgWarheadExpl</DestroySound>-->
-    <!--            <PCU>25</PCU>-->
-    <!--            <IsAirTight>false</IsAirTight>-->
-    <!--        </Definition>-->
-    <!--    </CubeBlocks>-->
+    <CubeBlocks>
+        <!-- Region Reactor -->
+        <!-- BuildTimeSeconds*2 MaxPowerOutput*10 PCU*2 -->
+        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+            <Id>
+                <TypeId>Reactor</TypeId>
+                <SubtypeId>SmallBlockLargeGenerator3</SubtypeId>
+            </Id>
+            <DisplayName>大型反应堆III</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\LargeArcReactor_x10_Power_Icon.dds</Icon>
+            <Description>轻元素热核聚变反应堆将较轻的原子核结合在一起从而放出能量,聚变反应消耗的原料氦-3在月球土壤中广泛存在</Description>
+            <CubeSize>Small</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\SmallBlockLargeArcReactor.mwm</Model>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+                <Component Subtype="TitaniumPlate" Count="50"/>
+                <Component Subtype="PowerCell" Count="10"/>
+                <Component Subtype="LargeCopperTube" Count="5"/>
+                <Component Subtype="SteelBolt" Count="30"/>
+                <Component Subtype="Reactor" Count="60"/>
+                <Component Subtype="Superconductor" Count="700"/>
+                <Component Subtype="Computer" Count="35"/>
+                <Component Subtype="BrazingRod" Count="8"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Right" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Left" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Top" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Bottom" StartX="1" StartY="1" EndX="2" EndY="2" Default="true"/>
+                <MountPoint Side="Front" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Back" StartX="1" StartY="1" EndX="2" EndY="2"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.16" File="Models\SmallBlockLargeArcReactorConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.33" File="Models\SmallBlockLargeArcReactorConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="0.50" File="Models\SmallBlockLargeArcReactorConstruction_3.mwm"/>
+                <Model BuildPercentUpperBound="0.83" File="Models\SmallBlockLargeArcReactorConstruction_4.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\SmallBlockLargeArcReactorConstruction_5.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>LargeReactor3</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <BuildTimeSeconds>60</BuildTimeSeconds>
+            <EdgeType>Light</EdgeType>
+
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <MaxPowerOutput>147.5</MaxPowerOutput>
+
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+
+            <!-- 
+                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
+                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
+                Warning: Changing these values will affect performance.
+            -->
+            <InventoryFillFactorMin>0.0005</InventoryFillFactorMin>
+            <InventoryFillFactorMax>0.001</InventoryFillFactorMax>
+
+            <!-- 
+                This is how much of fuel is pulled from conveyor system in one tick.
+                It's in minutes, means that it will pull X minutes of fuel in one tick.
+                Warning: Changing this value will affect performance.
+            -->
+            <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
+
+            <FuelInfos>
+                <FuelInfo>
+                    <Id>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>Helium</SubtypeId>
+                    </Id>
+                    <Ratio>0.1</Ratio>
+                </FuelInfo>
+            </FuelInfos>
+            <PrimarySound>ShipSmNuclearLrg</PrimarySound>
+            <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>
+            <DamagedSound>ParticleReactor</DamagedSound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>50</PCU>
+            <TieredUpdateTimes>
+                <unsignedInt>900</unsignedInt>
+                <unsignedInt>1800</unsignedInt>
+                <unsignedInt>3600</unsignedInt>
+            </TieredUpdateTimes>
+        </Definition>
+        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+            <Id>
+                <TypeId>Reactor</TypeId>
+                <SubtypeId>LargeBlockLargeGenerator3</SubtypeId>
+            </Id>
+            <DisplayName>大型反应堆III</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\LargeArcReactor_x10_Power_Icon.dds</Icon>
+            <Description>轻元素热核聚变反应堆将较轻的原子核结合在一起从而放出能量,聚变反应消耗的原料氦-3在月球土壤中广泛存在</Description>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\LargeBlockArcReactor.mwm</Model>
+            <Components>
+                <Component Subtype="TitaniumPlate" Count="1000"/>
+                <Component Subtype="PowerCell" Count="80"/>
+                <Component Subtype="HeatSink" Count="70"/>
+                <Component Subtype="LargeCopperTube" Count="50"/>
+                <Component Subtype="SteelBolt" Count="120"/>
+                <Component Subtype="Reactor" Count="240"/>
+                <Component Subtype="Superconductor" Count="9600"/>
+                <Component Subtype="Computer" Count="125"/>
+                <Component Subtype="BrazingRod" Count="80"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Right" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Left" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Top" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Bottom" StartX="1" StartY="1" EndX="2" EndY="2" Default="true"/>
+                <MountPoint Side="Front" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Back" StartX="1" StartY="1" EndX="2" EndY="2"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.16" File="Models\LargeBlockLargeArcReactorConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.33" File="Models\LargeBlockLargeArcReactorConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="0.50" File="Models\LargeBlockLargeArcReactorConstruction_3.mwm"/>
+                <Model BuildPercentUpperBound="0.83" File="Models\LargeBlockLargeArcReactorConstruction_4.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\LargeBlockLargeArcReactorConstruction_5.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>LargeReactor3</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>200</BuildTimeSeconds>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <MaxPowerOutput>3000</MaxPowerOutput>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+
+            <!-- 
+            Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
+            If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
+            Warning: Changing these values will affect performance.
+            -->
+            <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
+            <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
+
+            <!-- 
+                This is how much of fuel is pulled from conveyor system in one tick.
+                It's in minutes, means that it will pull X minutes of fuel in one tick.
+                Warning: Changing this value will affect performance.
+            -->
+            <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
+
+            <FuelInfos>
+                <FuelInfo>
+                    <Id>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>Helium</SubtypeId>
+                    </Id>
+                    <Ratio>0.1</Ratio>
+                </FuelInfo>
+            </FuelInfos>
+            <PrimarySound>ShipLrgNuclearLrg</PrimarySound>
+            <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>
+            <DamagedSound>ParticleReactor</DamagedSound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+            <DestroySound>WepLrgWarheadExpl</DestroySound>
+            <PCU>50</PCU>
+            <IsAirTight>false</IsAirTight>
+            <TieredUpdateTimes>
+                <unsignedInt>900</unsignedInt>
+                <unsignedInt>1800</unsignedInt>
+                <unsignedInt>3600</unsignedInt>
+            </TieredUpdateTimes>
+        </Definition>
+        <!-- End Region Reactor -->
+    </CubeBlocks>
 </Definitions>
