@@ -2,7 +2,7 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <CubeBlocks>
         <!-- Region IonThrusters -->
-        <!-- components*2 buildTime*1.5 power*4 force*4 -->
+        <!-- components*4 buildTime*1.5 power*4 force*4 -->
         <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
@@ -20,12 +20,12 @@
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="2"/>
-                <Component Subtype="Construction" Count="2"/>
-                <Component Subtype="LargeTube" Count="2"/>
-                <Component Subtype="Thrust" Count="2"/>
-                <Component Subtype="Construction" Count="2"/>
-                <Component Subtype="SteelPlate" Count="2"/>
+                <Component Subtype="SteelPlate" Count="4"/>
+                <Component Subtype="Construction" Count="4"/>
+                <Component Subtype="LargeTube" Count="4"/>
+                <Component Subtype="Thrust" Count="4"/>
+                <Component Subtype="Construction" Count="4"/>
+                <Component Subtype="SteelPlate" Count="4"/>
             </Components>
             <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
@@ -117,12 +117,12 @@
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="2"/>
-                <Component Subtype="Construction" Count="2"/>
-                <Component Subtype="LargeTube" Count="10"/>
-                <Component Subtype="Thrust" Count="24"/>
-                <Component Subtype="Construction" Count="2"/>
-                <Component Subtype="SteelPlate" Count="8"/>
+                <Component Subtype="SteelPlate" Count="4"/>
+                <Component Subtype="Construction" Count="4"/>
+                <Component Subtype="LargeTube" Count="20"/>
+                <Component Subtype="Thrust" Count="48"/>
+                <Component Subtype="Construction" Count="4"/>
+                <Component Subtype="SteelPlate" Count="16"/>
             </Components>
             <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
@@ -216,12 +216,12 @@
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="30"/>
+                <Component Subtype="SteelPlate" Count="60"/>
+                <Component Subtype="Construction" Count="160"/>
+                <Component Subtype="LargeTube" Count="32"/>
+                <Component Subtype="Thrust" Count="320"/>
                 <Component Subtype="Construction" Count="80"/>
-                <Component Subtype="LargeTube" Count="16"/>
-                <Component Subtype="Thrust" Count="160"/>
-                <Component Subtype="Construction" Count="40"/>
-                <Component Subtype="SteelPlate" Count="20"/>
+                <Component Subtype="SteelPlate" Count="40"/>
             </Components>
             <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
@@ -313,12 +313,12 @@
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
+                <Component Subtype="SteelPlate" Count="400"/>
+                <Component Subtype="Construction" Count="280"/>
+                <Component Subtype="LargeTube" Count="160"/>
+                <Component Subtype="Thrust" Count="3840"/>
+                <Component Subtype="Construction" Count="120"/>
                 <Component Subtype="SteelPlate" Count="200"/>
-                <Component Subtype="Construction" Count="140"/>
-                <Component Subtype="LargeTube" Count="80"/>
-                <Component Subtype="Thrust" Count="1920"/>
-                <Component Subtype="Construction" Count="60"/>
-                <Component Subtype="SteelPlate" Count="100"/>
             </Components>
             <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
@@ -400,7 +400,7 @@
         <!-- End Region IonThrusters -->
 
         <!-- Region HydrogenThrusters -->
-        <!-- components*2 buildTime*1.5 efficiency*1 Consumption*4 force*4 -->
+        <!-- components*4 buildTime*1.5 efficiency*1 Consumption*4 force*4 -->
         <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
@@ -417,12 +417,12 @@
             <ThrusterType>Hydrogen</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
+                <Component Subtype="SteelPlate" Count="400"/>
+                <Component Subtype="Construction" Count="600"/>
+                <Component Subtype="MetalGrid" Count="1000"/>
+                <Component Subtype="LargeTube" Count="160"/>
+                <Component Subtype="Construction" Count="120"/>
                 <Component Subtype="SteelPlate" Count="200"/>
-                <Component Subtype="Construction" Count="300"/>
-                <Component Subtype="MetalGrid" Count="500"/>
-                <Component Subtype="LargeTube" Count="80"/>
-                <Component Subtype="Construction" Count="60"/>
-                <Component Subtype="SteelPlate" Count="100"/>
             </Components>
             <CriticalComponent Subtype="LargeTube" Index="0"/>
             <Center x="1" y="1" z="2"/>
@@ -522,12 +522,12 @@
             <ThrusterType>Hydrogen</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="30"/>
+                <Component Subtype="SteelPlate" Count="60"/>
+                <Component Subtype="Construction" Count="160"/>
+                <Component Subtype="MetalGrid" Count="160"/>
+                <Component Subtype="LargeTube" Count="32"/>
                 <Component Subtype="Construction" Count="80"/>
-                <Component Subtype="MetalGrid" Count="80"/>
-                <Component Subtype="LargeTube" Count="16"/>
-                <Component Subtype="Construction" Count="40"/>
-                <Component Subtype="SteelPlate" Count="20"/>
+                <Component Subtype="SteelPlate" Count="40"/>
             </Components>
             <CriticalComponent Subtype="LargeTube" Index="0"/>
             <MountPoints>
@@ -624,12 +624,12 @@
             <ThrusterType>Hydrogen</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="40"/>
+                <Component Subtype="SteelPlate" Count="80"/>
+                <Component Subtype="Construction" Count="80"/>
+                <Component Subtype="MetalGrid" Count="88"/>
+                <Component Subtype="LargeTube" Count="40"/>
                 <Component Subtype="Construction" Count="40"/>
-                <Component Subtype="MetalGrid" Count="44"/>
-                <Component Subtype="LargeTube" Count="20"/>
-                <Component Subtype="Construction" Count="20"/>
-                <Component Subtype="SteelPlate" Count="20"/>
+                <Component Subtype="SteelPlate" Count="40"/>
             </Components>
             <CriticalComponent Subtype="LargeTube" Index="0"/>
             <Center x="1" y="1" z="2"/>
@@ -728,12 +728,12 @@
             <ThrusterType>Hydrogen</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="4"/>
+                <Component Subtype="SteelPlate" Count="8"/>
+                <Component Subtype="Construction" Count="40"/>
+                <Component Subtype="MetalGrid" Count="16"/>
+                <Component Subtype="LargeTube" Count="8"/>
                 <Component Subtype="Construction" Count="20"/>
-                <Component Subtype="MetalGrid" Count="8"/>
-                <Component Subtype="LargeTube" Count="4"/>
-                <Component Subtype="Construction" Count="10"/>
-                <Component Subtype="SteelPlate" Count="10"/>
+                <Component Subtype="SteelPlate" Count="20"/>
             </Components>
             <CriticalComponent Subtype="LargeTube" Index="0"/>
             <MountPoints>
@@ -817,7 +817,7 @@
         <!-- End Region HydrogenThrusters -->
 
         <!-- Region AtmosphericThrusters -->
-        <!-- components*2 buildTime*1.5 power*4 force*4 -->
+        <!-- components*4 buildTime*1.5 power*4 force*4 -->
         <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
@@ -834,13 +834,13 @@
             <ThrusterType>Atmospheric</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="200"/>
+                <Component Subtype="SteelPlate" Count="400"/>
+                <Component Subtype="Construction" Count="160"/>
+                <Component Subtype="LargeTube" Count="200"/>
+                <Component Subtype="MetalGrid" Count="160"/>
+                <Component Subtype="Motor" Count="4400"/>
                 <Component Subtype="Construction" Count="80"/>
-                <Component Subtype="LargeTube" Count="100"/>
-                <Component Subtype="MetalGrid" Count="80"/>
-                <Component Subtype="Motor" Count="2200"/>
-                <Component Subtype="Construction" Count="40"/>
-                <Component Subtype="SteelPlate" Count="260"/>
+                <Component Subtype="SteelPlate" Count="520"/>
             </Components>
             <CriticalComponent Subtype="Motor" Index="0"/>
             <MountPoints>
@@ -944,13 +944,13 @@
             <ThrusterType>Atmospheric</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="30"/>
-                <Component Subtype="Construction" Count="60"/>
-                <Component Subtype="LargeTube" Count="16"/>
-                <Component Subtype="MetalGrid" Count="20"/>
-                <Component Subtype="Motor" Count="220"/>
-                <Component Subtype="Construction" Count="40"/>
-                <Component Subtype="SteelPlate" Count="40"/>
+                <Component Subtype="SteelPlate" Count="60"/>
+                <Component Subtype="Construction" Count="120"/>
+                <Component Subtype="LargeTube" Count="32"/>
+                <Component Subtype="MetalGrid" Count="40"/>
+                <Component Subtype="Motor" Count="440"/>
+                <Component Subtype="Construction" Count="80"/>
+                <Component Subtype="SteelPlate" Count="80"/>
             </Components>
             <CriticalComponent Subtype="Motor" Index="0"/>
             <MountPoints>
@@ -1054,13 +1054,13 @@
             <ThrusterType>Atmospheric</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="20"/>
+                <Component Subtype="SteelPlate" Count="40"/>
+                <Component Subtype="Construction" Count="80"/>
+                <Component Subtype="LargeTube" Count="16"/>
+                <Component Subtype="MetalGrid" Count="32"/>
+                <Component Subtype="Motor" Count="360"/>
                 <Component Subtype="Construction" Count="40"/>
-                <Component Subtype="LargeTube" Count="8"/>
-                <Component Subtype="MetalGrid" Count="16"/>
-                <Component Subtype="Motor" Count="180"/>
-                <Component Subtype="Construction" Count="20"/>
-                <Component Subtype="SteelPlate" Count="20"/>
+                <Component Subtype="SteelPlate" Count="40"/>
             </Components>
             <CriticalComponent Subtype="Motor" Index="0"/>
             <MountPoints>
@@ -1165,13 +1165,13 @@
             <ThrusterType>Atmospheric</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
+                <Component Subtype="SteelPlate" Count="8"/>
+                <Component Subtype="Construction" Count="80"/>
+                <Component Subtype="LargeTube" Count="4"/>
+                <Component Subtype="MetalGrid" Count="4"/>
+                <Component Subtype="Motor" Count="72"/>
+                <Component Subtype="Construction" Count="8"/>
                 <Component Subtype="SteelPlate" Count="4"/>
-                <Component Subtype="Construction" Count="40"/>
-                <Component Subtype="LargeTube" Count="2"/>
-                <Component Subtype="MetalGrid" Count="2"/>
-                <Component Subtype="Motor" Count="36"/>
-                <Component Subtype="Construction" Count="4"/>
-                <Component Subtype="SteelPlate" Count="2"/>
             </Components>
             <CriticalComponent Subtype="Motor" Index="0"/>
             <MountPoints>
